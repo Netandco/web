@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Net&Co </title>
+
+	<meta name="description" content="">
+
+	<meta name="keywords" content="">
+
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+	<!-- Bootstrap  -->
+	<link href="archivos/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- icon fonts font Awesome -->
+	<link rel="stylesheet" media="screen" href="archivos/fonts/font-awesome/font-awesome.min.css">
+		
+	<!-- Custom Styles -->
+	<link href="archivos/css/style.css" rel="stylesheet">
+    
+	<!-- Responsive Styles -->
+	<link href="archivos/css/responsive.css" rel="stylesheet">
+	
+	<!-- Normalize Styles -->
+	<link href="archivos/css/normalize.css" rel="stylesheet">
+
+	<!-- Extras -->
+	<link rel="stylesheet" type="text/css" href="archivos/css/animate.css">
+    
+    <!-- Slide -->
+    <link href="archivos/css/font-awesome.min.css" rel="stylesheet">    
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+	<!-- Script para mostrar o ocultar un DIV // Hay que ponerlo en un javascript externo // -->
+		<script language="JavaScript">
+        
+        function muestra_oculta(id){
+        if (document.getElementById){ //se obtiene el id
+        var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
+        el.style.display = (el.style.display == 'none') ? 'block' : 'none'; //damos un atributo display:none que oculta el div
+        }
+        }
+        window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
+        muestra_oculta('contacto');/* "contacto" es el nombre que le dimos al DIV */
+        }
+        </script>        
+</head>
+	<body>
+		<!-- Sección Header -->
+		<header id="header">
+			<nav class="main-navigation navbar-fixed-top" role="navigation" data-offset-top="200">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<i class="fa fa-bars fa-lg"></i>
+						</button>
+						<!-- logo -->
+						<a href="index.html" class="navbar-brand"><img src="archivos/img/Logo/desde_979px/logo_web_98x30.png" alt=""></a>
+					</div>
+					
+					<!-- Menu -->
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav" id="main_navigation_menu">
+							<li><a href="#nosotros">OFRECEMOS</a></li>
+							<li><a href="#somosTalento">SOMOS</a></li>										
+							<li><a href="#main-slider">OBJETIVOS</a></li>
+							<li><a href="#footer">CONTACTO</a></li>
+						</ul>
+					</div>
+					<!-- Fin Menu -->
+				</div>
+			</nav>
+		</header>
+		<!-- Fin Sección Header -->
+		
+		<!-- Sección Libera tu grandeza -->
+		<section id="intro" class="section-intro">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+						<div class="main-text">
+							<h1 class="wow fadeInUp">LIBERA</h1>
+							<h1 class="wow fadeInUp" data-wow-delay=".7s">TU</h1>
+							<h1 class="wow fadeInUp" data-wow-delay="1.5s">GRANDEZA</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Fin Sección Libera tu grandeza -->
+		
+        <!-- Sección Héroes -->
+        <section id="heroes">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-md-6 wow fadeInUp">
+						<div class="service-box">
+							<div class="content1">
+								<h3>Estamos rodeados de héroes</h3>
+								<p>Héroes desconocidos que en muchas ocasiones no saben cuál es su superpoder o el motivo de su lucha. Personas que apuestan por sí mismos. Valientes que día tras día tratan de hacer realidad sus sueós.</p><p>Sabemos que estáis ahí, sabemos que tenéis muchos sueños que cumplir y muchas ideas que puedes mejorar el mundo que nos rodea.</p><p>No importa si no sabes como hacerlo, la realidad es que sabers que debes hacerlo. Actúa, no estas sólo. El mundo os necesita. Es el momento de actuar, de hacer que las cosas ocurran, de liberar vuestra grandeza.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-6 wow fadeInUp" data-wow-delay=".2s" data-wow-offset="10">
+						<div class="service-box">
+							<div class="content2">
+								<h3>"Un héroe es toda persona que encuentra la fuerza para preservar y continuar a pesar de los obstaculos."</h3>
+                                <p><i>Christopher Reeve</i></p>
+							</div>
+						</div>
+					</div>
+					
+		</section>
+        <!-- Fin Sección Héroes -->
+        
+		<!-- Sección Nosotros -->
+		<section id="nosotros">
+			<div class="container">
+				<h5 class="section-title wow fadeIn" data-wow-delay=".2s">Net&Co es una entidad formada por y para universitarios, que persigue dinamizar el entorno académico apostando por el talento y fomentando el emprendimiento</h5>
+                <div class="row">
+					<div class="col-md-4 wow fadeInUp">
+                    <div class="borderDerecha">
+						<div class="service-box">
+							<div class="content">
+                            	<div class="icon-wrapper icon-wrapperIzq">
+                                	<img src="archivos/fonts/amigos.svg"><!--<i class="fa fa-users"></i>-->
+                                </div>
+								<h2>Amigos</h2>
+								<p>Somos universitarios como tú, con ganas de aprovechar este momento en algo más que para jugar al mus. Creemos que podemos cambiar las cosas, queremos dejar huella.</p></br></br></br><!--Igualar contenedores-->
+							</div>
+						</div>
+                    </div>
+					</div>
+					<div class="col-md-4 wow fadeInUp" data-wow-delay=".2s" data-wow-offset="10">
+                    <div class="borderDerecha">
+						<div class="service-box">
+							<div class="content">
+                            	<div class="icon-wrapper icon-wrapperDer">
+                                <img class="engranaje" src="archivos/fonts/engranajes.svg"><!--<i class="fa fa-cogs"></i>-->
+                                </div>
+								<h2>Intercambio</h2>
+								<p>Un grupo con perfiles académicos heterogéneos procedentes de las distintas universidaddes de España, unido a los diversos encuentros con emprendedores que promovemos. Hacen de Net&Co un marco perfecto para compartir experiencias y conocimientos.</p>
+							</div>
+						</div>
+                    </div>
+					</div>
+					<div class="col-md-4 wow fadeInUp" data-wow-delay=".4s" data-wow-offset="10">
+						<div class="service-box">
+							<div class="content">
+                            	<div class="icon-wrapper icon-wrapperIzq">
+                                <img src="archivos/fonts/bombilla.svg"><!--<i class="fa fa-lightbulb-o"></i>-->
+                                </div>
+								<h2>Emprendimiento</h2>
+								<p>Si algo nos une, es la pasión por el emprendimiento. Juntos constituimos un hub multidisciplinar perfecto con el que poder llevar a cabo nuestras ideas y proyectos.</p></br></br></br><!--Igualar contenedores-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Fin Sección Nosotros -->
+        
+        <!-- Sección Somos Talento -->
+		<section id="somosTalento" class="section-somosTalento">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+                    	<div><h1 class="wow fadeInUp">SOMOS TALENTO</h1></div>
+                        <div class="col-sm-5 col-md-6">
+                            <div class="main-text">
+                                <p>La <strong>incubadora de proyectos</strong> que agrupa a los jóvenes de más talento de nuestro país, creando un marco adecuado para que tomen forma las ideas y se hagan realidad los proyectos de forma conjunta y <strong>colaborativa</strong>.</p>
+                                <h2 class="wow fadeInDownBig">HUB</h2>
+                                <p>Captamos y concentramos a jóvenes talentos con perfiles heterogéneos procedentes de las diferentes universidades y centros formativos de nuestro país. Fomentando el intercambio y la colaboración.</p>
+                                <h2 class="wow fadeInDownBig">EQUIPO</h2>
+                                <p>Un equipo de trabajo multidisciplinar formado por los alunos más destacados en las diferentes áreas relacionadas con el mundo del emprendimiento. Desde ingenieros, economistas, abogados, maketinianos o diseñadores, entre otros.</p>
+                                <p>Un equipo autosuficiente con el que poder desarrollar tus ideas desde cero, o colaborar en el desarrollo de aqullos proyectos en gestación.</p>
+                                <h2 class="wow fadeInDownBig">LANZADERA</h2>
+                                <p>Existe una implicación directa en cada uno de los proyectos que son incubados en Net&Co, poniendo a su disposición los recursos necesarios tanto humanos como financieros.</p>
+                                <p>Net&Co es una organización sin ánimo de lucro que invierte, los fondos captados, proporcionalmente en todos los proyectos en incubación.</p>
+                            </div>
+                        </div>
+                    	<div class="imgnet col-sm-5 col-md-4">
+                        	<img src="archivos/img/3_Somos_talento/infografía_dibujitos/infoDibujitos_500x751.png">
+                    	</div>
+                    </div>
+				</div>
+            </div>
+		</section>
+		<!-- Fin Sección Somos Talento -->
+        
+        <!-- Sección Conectando Talento -->
+        <section id="conectandoTalento">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInUp">
+						<div class="service-box2">
+							<div class="content2">
+                            	<img src="archivos/img/4_conectamosTalento/logoFlechas_289x127.png">
+							</div>
+						</div>
+					</div>	
+                    <div class="col-md-6 wow fadeInUp">
+						<div class="service-box1">
+							<div class="content1">
+								<h3>Conectando talento</h3>
+								<p>Creamos un marco donde la colaboración y el intercambio son la clave, dónde establecer lazos de interés (networking) y colaborar en el desrrollo de proyectos (coworking).</p>
+							</div>
+						</div>
+					</div>				
+		</section>
+        <!-- Fin Sección Conectando Talento -->
+        
+     	<!-- Sección Slide -->
+        	<section id="main-slider" class="no-margin">
+                <div class="carousel slide wet-asphalt">
+                    <ol class="carousel-indicators">
+                        <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#main-slider" data-slide-to="1"></li>
+                        <li data-target="#main-slider" data-slide-to="2"></li>
+                        <li data-target="#main-slider" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item item1 active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="carousel-content centered">
+                                            <h2 class="animation animated-item-1">Descubrir, Relacionar y Brillar</h2>
+                                            <h4 class="animation animated-item-2">Nuestro objetivo: Saber de qué somos capaces juntos</h4>
+                                            <p class="animation animated-item-2">El sistema educativo contempla al estudiante como un vaso vacío que debe llenar de contenido. Nosotros creemos que somos hogueras llenas de potencial que debemos prender y avivar, descubriendo sus verdaderas pasiones y motivaciones.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--/.item-->
+                        <div class="item item2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="carousel-content centered">
+                                            <h2 class="animation animated-item-1">Brillar</h2>
+                                            <h4 class="animation animated-item-2">Mostrémoselo al mundo</h4>
+                                            <p class="animation animated-item-2">Cada uno de nuestros compañeros o grupos de trabajo puede planear sus ideas en nuestras jornadas DEMO, siendo evaluadas por todos los miembros de Net&Co. Es la valoración de la mayoría, quién decide que proyectos son incubados y cuales no.</p><p>Net&Co destina sus recursos y designa grupos de trabajo para la incubación de dichos proyectos.</p><p>Todos trabajamos codo con codo, todos somos uno.</p>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--/.item-->
+                        <div class="item item3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="carousel-content centered">
+                                            <h2 class="animation animated-item-1">Descrubrir</h2>
+                                            <h4 class="animation animated-item-2">¿Sabes de los que eres capaz?</h4>
+                                            <p class="animation animated-item-2">Periodicamente habilitamos el acceso a nuevos socios, organizando diferentes encuentros o acciones a través de la web o en las propias universidades, para recoger solicitudes de inscripción.</p><p>Sólo aquellos que logran superar la prueba de selección y una entrevista personal, seran miembros de Net&CO. </p><p>¿Te atreves a ser uno de los mejores?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--/.item-->
+                        <div class="item item4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="carousel-content centered">
+                                            <h2 class="animation animated-item-1">Relacionar</h2>
+                                            <h4 class="animation animated-item-2">No sabes de los que somos capaces juntos</h4>
+                                            <p class="animation animated-item-2">Funcionamos como un gran equipo de trabajo flexible. Internamente nos estructuramos en grupos de trabajo abiertos y multidisciplinares, que están en constante relacionción unos con otros.</p><p>Compartimos experiencias, ideas, ilusiones y conocimientos a través de nuestras jornadas de interambio, encuentros y eventos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--/.item-->
+                    </div><!--/.carousel-inner-->
+                </div><!--/.carousel-->
+                <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+                    <i class="icon-angle-left"></i>
+                </a>
+                <a class="next hidden-xs" href="#main-slider" data-slide="next">
+                    <i class="icon-angle-right"></i>
+                </a>
+            </section><!--/#main-slider-->
+        <!-- Fin Sección Slide -->
+		
+        <!-- Sección Sueños -->
+        <section id="sueños">
+        	<div class="container-fluid" id="shop">
+                <div class="row">
+                	<!-- Dos Primeras Filas -->
+                    <div id="effect" class="effects clearfix">
+                        <div class="col-lg-4 left nopadding">
+                            <div class="left-box-1">
+                           		<div class="img">
+                                    <div class="view view-sixth">
+                                        <img src="archivos/img/6_MuralCitas/square_3.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>"Sueña la clase de mundo en el que quiera vivir. Sueña en voz alta."</h3>
+                                            <p><i>Bono</i></p>
+                                        </div>
+                                    </div>
+                            	</div>    
+                            </div>
+                            <div class="left-box-2 box">
+                                <div class="img">
+                                    <div class="view2 view-sixth2">
+                                        <img src="archivos/img/6_MuralCitas/square_1.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>Cambiando vidas</h3>
+                                            <p>"Si tus acciones inspiran a otros a soñar más, aprender más, hacer más y ser más, eres un líder."</p>
+                                            <p><i>Jhon Quincy Adams</i></p>
+                                        </div>
+                                	</div>
+                                </div>
+                            </div>
+                            <div class="left-box-1">
+                                <div class="img">
+                                    <div class="view2 view-sixth2">
+                                        <img src="archivos/img/6_MuralCitas/square_4.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>Motivar es crear</h3>
+                                            <p>"Puedes tener éxito en casi cualquier cosa para la que tengas una motivación desenfrenada."</p>
+                                            <p><i>Zig Ziglar</i></p>
+                                        </div>
+                                    </div>
+                            	</div>
+                            </div>
+                            <div class="left-box-2 box">
+                                <div class="img">
+                                    <div class="view view-sixth">
+                                        <img src="archivos/img/6_MuralCitas/square_2.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>"Los que están lo suficientemente locos para pensar que pueden cambiar el mundo, son los que lo hacen."</h3>
+                                            <p><i>Steve Jobs</i></p>
+                                        </div>
+                                    </div>
+                            	</div>
+                            </div>
+                            
+                            
+                             <!--Una Fila más-->
+                            <div class="left-box-1">
+                                <div class="img">
+                                    <div class="view2 view-sixth2">
+                                        <img src="archivos/img/6_MuralCitas/square_7.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>Cree en ti</h3>
+                                            <p>"Un hombre con una nueva idea es un loco hasta que ésta triunfa."</p>
+                                            <p><i>Mark Twain</i></p>
+                                        </div>
+                                    </div>
+                            	</div>
+                            </div>
+                            <div class="left-box-2 box">
+                                <div class="img">
+                                    <div class="view view-sixth">
+                                        <img src="archivos/img/6_MuralCitas/square_8.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>"Recordemos: Un libro, un lápiz, un niño y un maestro puede cambiar el mundo."</h3>
+                                            <p><i>Malala Yousafzai</i></p>
+                                        </div>
+                                    </div>
+                            	</div>
+                            </div>
+                            <!--Una Fila más-->
+                            
+                            
+                        </div>
+                        <div class="col-lg-4 mid nopadding">
+                            <div class="mid-box box">
+                            <h1>Tienes la responsabilidad de hacer realidad tus sueños</h1>
+                            <p>Necesitamos líderes que inspiren con sus acciones. Por cada soñador que hace realidad sus sueños, motiva a cietnos a que persigan sus ideas, e impacta en miles para que empiecen a soñar.</p><p>Creemos que podemos impactar positivamente en la vida de miles de personas, enriqueciendo nuestras universidades y comunidades, ayudando a mejorar no sólo nuestro entorno, sino el mundo.</p><p>Qué mejor fuente de inspiración que estudiantes como tú y como nosotros, jóvenes llenos de ilusión y pasión por aprender. Creemos en ti. Únete al movimiento. Únete a Net&Co. </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-lg-4 right nopadding">
+                            <div class="left-box-1">
+                                <div class="img">
+                                    <div class="view view-sixth">
+                                        <img src="archivos/img/6_MuralCitas/square_6.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>"La pregunta más persistente y urgente de la vida es: ¿Que estas haciendo por los demás?"</h3>
+                                            <p><i>Martin Luther King</i></p>
+                                        </div>
+                                    </div>
+                            	</div>
+                            </div>
+                            <div class="left-box-2 box">
+                                <div class="img">
+                                    <div class="view2 view-sixth2">
+                                        <img src="archivos/img/6_MuralCitas/square_5.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>No existe el fracaso</h3>
+                                            <p>"El éxito no es final... El fracaso no es fatal... es el coraje para continuar lo que cuenta."</p>
+                                            <p><i>Winston Churchill</i></p>
+                                        </div>
+                                    </div>
+                            	</div>
+                            </div>
+                            <div class="left-box-1">
+                                <div class="img">
+                                    <div class="view2 view-sixth2">
+                                        <img src="archivos/img/6_MuralCitas/square_7.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>Cree en ti</h3>
+                                            <p>"Un hombre con una nueva idea es un loco hasta que ésta triunfa."</p>
+                                            <p><i>Mark Twain</i></p>
+                                        </div>
+                                    </div>
+                            	</div>
+                            </div>
+                            <div class="left-box-2 box">
+                                <div class="img">
+                                    <div class="view view-sixth">
+                                        <img src="archivos/img/6_MuralCitas/square_8.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>"Recordemos: Un libro, un lápiz, un niño y un maestro puede cambiar el mundo."</h3>
+                                            <p><i>Malala Yousafzai</i></p>
+                                        </div>
+                                    </div>
+                            	</div>
+                            </div>
+                            
+                            
+                            <!--Una Fila más-->
+                            <div class="left-box-1">
+                                <div class="img">
+                                    <div class="view2 view-sixth2">
+                                        <img src="archivos/img/6_MuralCitas/square_7.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>Cree en ti</h3>
+                                            <p>"Un hombre con una nueva idea es un loco hasta que ésta triunfa."</p>
+                                            <p><i>Mark Twain</i></p>
+                                        </div>
+                                    </div>
+                            	</div>
+                            </div>
+                            <div class="left-box-2 box">
+                                <div class="img">
+                                    <div class="view view-sixth">
+                                        <img src="archivos/img/6_MuralCitas/square_8.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>"Recordemos: Un libro, un lápiz, un niño y un maestro puede cambiar el mundo."</h3>
+                                            <p><i>Malala Yousafzai</i></p>
+                                        </div>
+                                    </div>
+                            	</div>
+                            </div>
+                            <!--Una Fila más-->
+                            
+                            
+                        </div>
+                    </div>
+                    <!-- Fin Dos Primeras Filas -->
+                        
+                    <!-- Tercera Fila
+                    <div id="effect" class="effects clearfix">
+                        <div class="col-lg-4 left nopadding">
+                            <div class="left-box-1">
+                                <div class="img">
+                                    <div class="view view-sixth">
+                                        <img src="archivos/img/6_MuralCitas/square_1.jpg" alt="Leather Seats">
+                                        <div class="mask">
+                                            <h3>"Sueña la clase de mundo en el que quieras vivir. Sueña en voz alta."</h3>
+                                            <p><i>Bono</i></p>
+                                        </div>
+                                    </div>
+                            	</div>
+                            </div>
+                            <div class="left-box-2 box">
+                                <div class="imgO">
+                                    <img src="archivos/img/6_MuralCitas/square_3.jpg" alt="Custom Seats">
+                                    <div class="overlay">
+                                        <a href="#" class="expand">custom seats</a>
+                                        <a class="close-overlay hidden">x</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mid nopadding">
+                            <div class="left-box-1">
+                                <div class="imgO">
+                                    <img src="archivos/img/6_MuralCitas/square_4.jpg" alt="Leather Seats">
+                                    <div class="overlay">
+                                        <a href="http://google.com/" class="expand">leather seats</a>
+                                        <a class="close-overlay hidden">x</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left-box-2 box">
+                                <div class="imgO">
+                                    <img src="archivos/img/6_MuralCitas/square_5.jpg" alt="Custom Seats">
+                                    <div class="overlay">
+                                        <a href="#" class="expand">custom seats</a>
+                                        <a class="close-overlay hidden">x</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-lg-4 right nopadding">
+                            <div class="left-box-1">
+                                <div class="imgO">
+                                    <img src="archivos/img/6_MuralCitas/square_5.jpg" alt="Leather Seats">
+                                    <div class="overlay">
+                                        <a href="http://google.com/" class="expand">leather seats</a>
+                                        <a class="close-overlay hidden">x</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left-box-2 box">
+                                <div class="imgO">
+                                    <img src="archivos/img/6_MuralCitas/square_6.jpg" alt="Custom Seats">
+                                    <div class="overlay">
+                                        <a href="#" class="expand">custom seats</a>
+                                        <a class="close-overlay hidden">x</a>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+   					<!-- Fin Tercera Fila -->
+                </div>
+            </div>
+        </section>	
+        <!-- Fin Sección Sueños -->
+        
+		<!-- Sección antesFooter -->
+		<section id="antesFooter">
+			<div class="container">
+				<div class="row">		
+					<h2 class="description wow fadeInUp" data-wow-delay=".2s">Agrupamos talento</h2>
+                    <h2 class="description wow fadeInUp" data-wow-delay=".4s">Compartimos conocimientos</h2>
+                    <h2 class="description wow fadeInUp" data-wow-delay=".8s">Desarrollamos proyectos</h2>
+				</div>
+			</div>
+		</section>
+		<!-- Fin Sección antesFooter -->
+
+		<!-- Sección Footer -->
+		<footer id="footer">
+			<div class="container">
+					<div class="copyright">
+                    	<p class="copy">© 2015 Net&Co. </p>
+						<p>Todos los derechos reservados</p>
+					</div>
+                    <div class="social-icons">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div>
+                    <div class="controls text-center"><a href="#contacto" style='cursor: pointer;'onclick="muestra_oculta('contacto')" title="" class="btn2 btn-border2">¿HABLAMOS?</a>
+					</div>
+            </div>
+		</footer>
+		<!-- Fin Sección Footer -->
+        
+        <!-- Sección Contacto -->
+		<section id="contacto">
+			<div class="overlay">
+				<div class="container">
+				<h1 class="section-title wow fadeIn" data-wow-delay=".2s">En este momento no podemos atenderte, estamos haciendo cosas molonas. Dejanos un mensaje después del BIP.</h1>
+                <h2 class="section-title wow fadeInUp" data-wow-delay="1.2s">¡¡¡BIPPP!!!</h2>
+					<div class="row">
+						<div class="contact-form">
+							<form role="form" method="post">
+								<div class="col-sm-6 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
+										<div class="controls">
+											<input class="contact_input" type="text" name="name" placeholder="Nombre">
+											<i class="fa fa-user"></i>
+										</div>
+										<div class="controls">
+											<input class="contact_input" type="text" name="Email" placeholder="Email">
+											<i class="fa fa-envelope-o"></i>
+										</div>
+										<div class="controls">
+											<input class="contact_input" type="text" name="Phone" placeholder="Teléfono">
+											<i class="fa fa-phone"></i>
+										</div>
+								</div>
+								<div class="col-sm-6 col-md-6 wow fadeInRight" data-wow-delay="0.2s">
+										<textarea name="massage" rows="7" class="form-control" placeholder="Mensaje"></textarea>
+								</div>
+								<div class="col-sm-6 col-md-12 wow" data-wow-delay="0.5s">
+									<button type="submit" id="submit" class="btn btn-common">COLGAR</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+		<!-- Fin Sección Contacto -->
+
+		<!-- Sección Scroll Top -->
+		<div class="scroll-top" data-spy="affix" data-offset-top="300">
+			<a href="#header"><i class="fa fa-angle-up"></i></a>
+		</div>
+		<!-- Sección Scroll End -->
+
+		<!-- Include jquery.min.js plugin -->
+		<script src="archivos/js/jquery-min.js"></script>
+		<!-- One page Nav plugin -->		
+		<script src="archivos/js/jquery.nav.js"></script>
+		<!-- Include wow plugin -->
+		<script src="archivos/js/wow.js"></script>
+		<!-- Include mixitup plugin -->
+		<script src="archivos/js/jquery.mixitup.js"></script>
+		<!-- Lightbox -->
+		<script src="archivos/js/scroll-top.js"></script>
+		<!-- Smooth Scroll -->
+		<script src="archivos/js/smooth-scroll.js"></script>
+		<!-- preset js -->
+		<script src="archivos/js/style.changer.js"></script>
+		<!-- Modernizr js -->
+		<script src="archivos/js/modernizr-2.8.0.main.js"></script>
+		<!-- Main js -->
+		<script src="archivos/js/main.js"></script>
+        <!-- Javascript Slide -->
+        <script src="archivos/js/bootstrap.min.js"></script>
+		<script src="archivos/js/mainSlide.js"></script>
+        		
+	</body>
+</html>
