@@ -1,13 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Net&Co{% endblock %}</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <!-- Bootstrap  -->
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+        <!-- icon fonts font Awesome -->
+        <link rel="stylesheet" media="screen" href="{{ asset('fonts/font-awesome/font-awesome.min.css') }}">
+        <!-- Custom Styles -->
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+        <!-- Responsive Styles -->
+        <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
+        <!-- Normalize Styles -->
+        <link href="{{ asset('css/normalize.css') }}" rel="stylesheet">
+        <!-- Extras -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css') }}">
+        <!-- Slide -->
+        <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">  
         {% block stylesheets %}{% endblock %}
+
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
         {% block body %}{% endblock %}
+
+        <!-- Include jquery.min.js plugin -->
+        <script src="{{ asset('js/jquery-min.js') }}"></script>
+        <!-- One page Nav plugin -->        
+        <script src="{{ asset('js/jquery.nav.js') }}"></script>
+        <!-- Include wow plugin -->
+        <script src="{{ asset('js/wow.js') }}"></script>
+        <!-- Include mixitup plugin -->
+        <script src="{{ asset('js/jquery.mixitup.js') }}"></script>
+        <!-- Lightbox -->
+        <script src="{{ asset('js/scroll-top.js') }}"></script>
+        <!-- Smooth Scroll -->
+        <script src="{{ asset('js/smooth-scroll.js') }}"></script>
+        <!-- preset js -->
+        <script src="{{ asset('js/style.changer.js') }}"></script>
+        <!-- Modernizr js -->
+        <script src="{{ asset('js/modernizr-2.8.0.main.js') }}"></script>
+        <!-- Main js -->
+        <script src="{{ asset('js/main.js') }}"></script>
+        <!-- Javascript Slide -->
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/mainSlide.js') }}"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
