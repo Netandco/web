@@ -738,19 +738,16 @@ a { /* hack para Google Chrome prev y next (Botones anterior y siguiente) */
 /****************************/
 
 /*
-*    
 *  FOOTER
-*
 */
 #footer {
   background-color: #fff;
   width: 100%;
   height:100%;
-  padding-top:2em;
+  padding-top:3em;
   padding-bottom:1em;
 }
 #footer .copyright {
-  padding: 3em 0;
   color: #CCC;
   font-size: 14px;
   font-weight: 300;
@@ -768,12 +765,8 @@ a { /* hack para Google Chrome prev y next (Botones anterior y siguiente) */
   color: #34495E;
 }
 #footer .social-icons {
-  background-color: #1DA7C5;
   display:inline;
   text-align:right;
-}
-#footer .social-icons ul {
-  padding: 2em 0;
 }
 #footer .social-icons ul li {
   display: inline-block;
@@ -788,7 +781,6 @@ a { /* hack para Google Chrome prev y next (Botones anterior y siguiente) */
   width: 48px;
   text-align: center;
   height: 48px;
-  line-height: 48px;
 }
 #footer .social-icons ul li a i:hover {
   -webkit-transition: all 0.2s linear;
@@ -815,49 +807,29 @@ a { /* hack para Google Chrome prev y next (Botones anterior y siguiente) */
   margin-bottom: 2em;
 }
 
-#footer .btn2 {
-  text-align:center;
-  float:none;
-  width:10%;
-  margin-right:12em;
-  text-transform: uppercase;
-  font-weight: 300;
-  cursor: pointer;
+#footer .btn-footer {
+  border: 2px solid #1DA7C5;
+  color: #ffffff;
+  background: #1DA7C5;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius:5px;
   padding: 10px 16px;
-  outline: none;
-  position: relative;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-#footer .btn-border2 {
-  border: 2px solid #1DA7C5;
-  color: #ffffff;
-  background: #1DA7C5;
-  overflow: hidden;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 300;
-  border-radius:5px;
-}
-#footer .btn-border2:hover,
-.btn-border2:active {
+
+#footer .btnFooter:hover,
+.btn-footer:active {
   color: #1DA7C5;
   background: #ffffff;
   text-decoration:none;
 }
-/*
-*    
-* FIN FOOTER
-*
-*/
-
 /****************************/
 
 /*
-*    
 *  CONTACTO
-*
 */
 #contacto {
   background: #333;
