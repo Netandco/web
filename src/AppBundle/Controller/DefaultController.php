@@ -17,27 +17,32 @@ class DefaultController extends Controller
         return $this->render('default/index.html.twig');
     }
 
-    /*
-    * @Route("", name="contactEmail")
+    /**
+    * @Route("/sendEmail", name="contactEmail")
     */
     public function sendContactEmailAction(Request $request)
     {
 
+        $name   = $request->request->get('name');
+        $email  = $request->request->get('email');
+        $phone  = $request->request->get('phone');
+        $message = $request->request->get('message');
+
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Email')
-            ->setFrom('send@example.com')
-            ->setTo('recipient@example.com')
+            ->setFrom($email)
+            ->setTo('admin@netandco.es')
             ->setBody(
                 $this->renderView(
                     // app/Resources/views/emails/contact.html.twig
                     'emails/contact.html.twig',
-                    array('name' => $name)
+                    array('name' => $name, 'email' => $email, 'phone' => $phone, 'message' => $message)
                 ),
                 'text/html'
             )
         ;
         $this->get('mailer')->send($message);
 
-        return $this->render('default/index.html.twig');
+        return $this->redirectToRoute('homepage');
     }
 }
