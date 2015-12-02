@@ -12,8 +12,8 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <i class="fa fa-bars fa-lg"></i>
                     </button>
-                    <a href="#intro" class="navbar-brand">
-                        <img src="{{ asset('img/Logo/desde_979px/logo_web_98x30.png') }}" alt="">
+                    <a href="#header" class="navbar-brand">
+                        <img src="{{ asset('img/Logo/desde_979px/logo_web_98x30.png') }}" alt="logo">
                     </a>
                 </div>
                 
@@ -74,33 +74,35 @@
     <!-- Sección Nosotros -->
     <section id="nosotros">
         <div class="container">
-            <h5 class="section-title wow fadeIn" data-wow-delay=".2s">Net&Co es una entidad formada por y para universitarios, que persigue dinamizar el entorno académico apostando por el talento y fomentando el emprendimiento</h5>
+            <h5 class="section-title wow fadeIn" data-wow-delay=".2s">
+            Net&Co es una entidad formada por y para universitarios, que persigue dinamizar el entorno académico apostando por el talento y fomentando el emprendimiento</h5>
             <div class="row">
                 <div class="col-md-4 wow fadeInUp">
-                <div class="borderDerecha">
-                    <div class="service-box">
-                        <div class="content">
-                            <div class="icon-wrapper">
-                                <img src="{{ asset('fonts/amigos.svg') }}"><!--<i class="fa fa-users"></i>-->
+                    <div class="borderDerecha">
+                        <div class="service-box">
+                            <div class="content">
+                                <div class="icon-wrapper">
+                                    <img src="{{ asset('fonts/amigos.svg') }}"><!--<i class="fa fa-users"></i>-->
+                                </div>
+                                <h2>Amigos</h2>
+                                <p>Somos universitarios como tú, con ganas de aprovechar este momento en algo más que para jugar al mus. Creemos que podemos cambiar las cosas, queremos dejar huella.</p>
+                                <br><br><br><!--Igualar contenedores-->
                             </div>
-                            <h2>Amigos</h2>
-                            <p>Somos universitarios como tú, con ganas de aprovechar este momento en algo más que para jugar al mus. Creemos que podemos cambiar las cosas, queremos dejar huella.</p></br></br></br><!--Igualar contenedores-->
                         </div>
                     </div>
-                </div>
                 </div>
                 <div class="col-md-4 wow fadeInUp" data-wow-delay=".2s" data-wow-offset="10">
-                <div class="borderDerecha">
-                    <div class="service-box">
-                        <div class="content">
-                            <div class="icon-wrapper">
-                                <img class="engranaje" src="{{ asset('fonts/engranajes.svg') }}"><!--<i class="fa fa-cogs"></i>-->
+                    <div class="borderDerecha">
+                        <div class="service-box">
+                            <div class="content">
+                                <div class="icon-wrapper">
+                                    <img class="engranaje" src="{{ asset('fonts/engranajes.svg') }}"><!--<i class="fa fa-cogs"></i>-->
+                                </div>
+                                <h2>Intercambio</h2>
+                                <p>Un grupo con perfiles académicos heterogéneos procedentes de las distintas universidaddes de España, unido a los diversos encuentros con emprendedores que promovemos. Hacen de Net&Co un marco perfecto para compartir experiencias y conocimientos.</p>
                             </div>
-                            <h2>Intercambio</h2>
-                            <p>Un grupo con perfiles académicos heterogéneos procedentes de las distintas universidaddes de España, unido a los diversos encuentros con emprendedores que promovemos. Hacen de Net&Co un marco perfecto para compartir experiencias y conocimientos.</p>
                         </div>
                     </div>
-                </div>
                 </div>
                 <div class="col-md-4 wow fadeInUp" data-wow-delay=".4s" data-wow-offset="10">
                     <div class="service-box">
@@ -109,7 +111,8 @@
                                 <img src="{{ asset('fonts/bombilla.svg') }}"><!--<i class="fa fa-lightbulb-o"></i>-->
                             </div>
                             <h2>Emprendimiento</h2>
-                            <p>Si algo nos une, es la pasión por el emprendimiento. Juntos constituimos un hub multidisciplinar perfecto con el que poder llevar a cabo nuestras ideas y proyectos.</p></br></br></br><!--Igualar contenedores-->
+                            <p>Si algo nos une, es la pasión por el emprendimiento. Juntos constituimos un hub multidisciplinar perfecto con el que poder llevar a cabo nuestras ideas y proyectos.</p>
+                            <br><br><br><!--Igualar contenedores-->
                         </div>
                     </div>
                 </div>
@@ -260,7 +263,7 @@
     <!-- Fin Sección Slide -->
     
     <!-- Sección Sueños -->
-    <section id="dreams">
+    <section id="dreams" data-offset-top="300">
         <div class="container-fluid" id="shop">
             <div class="row">
                 <!-- Dos Primeras Filas -->
@@ -420,75 +423,7 @@
                         <!--Una Fila más-->
                     </div>
                 </div>
-                <!-- Fin Dos Primeras Filas -->
-                    
-                <!-- Tercera Fila
-                <div id="effect" class="effects clearfix">
-                    <div class="col-lg-4 left nopadding">
-                        <div class="left-box-1">
-                            <div class="img">
-                                <div class="view view-sixth">
-                                    <img src="{{ asset('img/6_MuralCitas/square_1.jpg') }}" alt="Leather Seats">
-                                    <div class="mask">
-                                        <h3>"Sueña la clase de mundo en el que quieras vivir. Sueña en voz alta."</h3>
-                                        <p><i>Bono</i></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="left-box-2 box">
-                            <div class="imgO">
-                                <img src="{{ asset('"img/6_MuralCitas/square_3.jpg') }}" alt="Custom Seats">
-                                <div class="overlay">
-                                    <a href="#" class="expand">custom seats</a>
-                                    <a class="close-overlay hidden">x</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mid nopadding">
-                        <div class="left-box-1">
-                            <div class="imgO">
-                                <img src="{{ asset('"img/6_MuralCitas/square_4.jpg') }}" alt="Leather Seats">
-                                <div class="overlay">
-                                    <a href="http://google.com/" class="expand">leather seats</a>
-                                    <a class="close-overlay hidden">x</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="left-box-2 box">
-                            <div class="imgO">
-                                <img src="{{ asset('"img/6_MuralCitas/square_5.jpg') }}" alt="Custom Seats">
-                                <div class="overlay">
-                                    <a href="#" class="expand">custom seats</a>
-                                    <a class="close-overlay hidden">x</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="col-lg-4 right nopadding">
-                        <div class="left-box-1">
-                            <div class="imgO">
-                                <img src="{{ asset('"img/6_MuralCitas/square_5.jpg') }}" alt="Leather Seats">
-                                <div class="overlay">
-                                    <a href="http://google.com/" class="expand">leather seats</a>
-                                    <a class="close-overlay hidden">x</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="left-box-2 box">
-                            <div class="imgO">
-                                <img src="{{ asset('"img/6_MuralCitas/square_6.jpg') }}" alt="Custom Seats">
-                                <div class="overlay">
-                                    <a href="" class="expand">custom seats</a>
-                                    <a class="close-overlay hidden">x</a>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-                <!-- Fin Tercera Fila -->
+                <!-- Fin Dos Primeras Filas -->    
             </div>
         </div>
     </section>  
@@ -515,14 +450,12 @@
                     <p>Todos los derechos reservados</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <a href="#contacto" onclick="muestra_oculta('contacto')" class="btn-footer">¿HABLAMOS?
-                    </a>
+                    <a href="#contacto" onclick="muestra_oculta('contacto')" class="btn-footer">¿HABLAMOS?</a>
                 </div>
                 <div class="col-md-4 social-icons">
                     <ul>
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                     </ul>
                 </div>
             </div>  
