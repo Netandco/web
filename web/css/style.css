@@ -508,7 +508,7 @@ a { /* hack para Google Chrome prev y next (Botones anterior y siguiente) */
     border-bottom:1.5px solid #1DA7C5; 
     color:#1DA7C5;
     text-align:center; 
-    font-size:40px;
+    font-size:2em;
 }
 #dreams .mid-box-1 img { 
     width: 100%; 
