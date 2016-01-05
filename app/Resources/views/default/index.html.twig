@@ -5,475 +5,443 @@
 
 {% block body %}
     <!-- Sección Header -->
-    <header id="header">
-        <nav class="main-navigation navbar-fixed-top" role="navigation" data-offset-top="200">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <i class="fa fa-bars fa-lg"></i>
-                    </button>
-                    <a href="#header" class="navbar-brand">
-                        <img src="{{ asset('img/Logo/desde_979px/logo_web_98x30.png') }}" alt="logo">
-                    </a>
-                </div>
-                
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav" id="main_navigation_menu">
-                        <li><a href="#nosotros">OFRECEMOS</a></li>
-                        <li><a href="#somosTalento">SOMOS</a></li>                                      
-                        <li><a href="#main-slider">OBJETIVOS</a></li>
-                        <li><a href="#footer">CONTACTO</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="{{ asset('img/Logo/desde_979px/logo_web_98x30.png') }}" alt="logo">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#us">OFRECEMOS</a></li>
+              <li><a href="#talent">SOMOS</a></li>                                      
+              <li><a href="#main-slider">OBJETIVOS</a></li>
+              <li><a href="#footer">CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <!-- Fin Sección Header -->
-    
-    <!-- Sección Libera tu grandeza -->
-    <section id="intro" class="section-intro">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="main-text">
-                        <h2 class="wow fadeInUp">LIBERA</h2>
-                        <h2 class="wow fadeInUp" data-wow-delay=".7s">TU</h2>
-                        <h2 class="wow fadeInUp" data-wow-delay="1.5s">GRANDEZA</h2>
-                    </div>
-                </div>
+
+    <section id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-7 col-sm-5 col-md-5 col-xs-offset-5 col-sm-offset-7 col-md-offset-7 col-md-offset-7">
+            <div class="main-text">
+              <span class="wow fadeInUp">LIBERA</span>
+              <br>
+              <span class="wow fadeInUp" data-wow-delay=".7s">TU</span>
+              <br>
+              <span class="wow fadeInUp" data-wow-delay="1.5s">GRANDEZA</span>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Fin Sección Libera tu grandeza -->
     
-    <!-- Sección Héroes -->
-    <section id="heroes">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 col-md-6 wow fadeInUp">
-                    <div class="service-box">
-                        <div class="content1">
-                            <h3>Estamos rodeados de héroes</h3>
-                            <p>Héroes desconocidos que en muchas ocasiones no saben cuál es su superpoder o el motivo de su lucha. Personas que apuestan por sí mismos. Valientes que día tras día tratan de hacer realidad sus sueós.</p><p>Sabemos que estáis ahí, sabemos que tenéis muchos sueños que cumplir y muchas ideas que puedes mejorar el mundo que nos rodea.</p><p>No importa si no sabes como hacerlo, la realidad es que sabers que debes hacerlo. Actúa, no estas sólo. El mundo os necesita. Es el momento de actuar, de hacer que las cosas ocurran, de liberar vuestra grandeza.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-md-6 wow fadeInUp" data-wow-delay=".2s" data-wow-offset="10">
-                    <div class="service-box">
-                        <div class="content2">
-                            <p>"Un héroe es toda persona que encuentra la fuerza para preservar y continuar a pesar de los obstaculos."</p>
-                            <p><i>Christopher Reeve</i></p>
-                        </div>
-                    </div>
-                </div>
+    <section id="heroes" class="visible-md visible-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-6 wow fadeInUp">
+            <div class="content1">
+              <h3>Estamos rodeados de héroes</h3>
+              <p>Héroes desconocidos que en muchas ocasiones no saben cuál es su superpoder o el motivo de su lucha. Personas que apuestan por sí mismos. Valientes que día tras día tratan de hacer realidad sus sueños.</p>
+              <p>Sabemos que estáis ahí, sabemos que tenéis muchos sueños que cumplir y muchas ideas que puedes mejorar el mundo que nos rodea.</p>
+              <p>No importa si no sabes como hacerlo, la realidad es que sabers que debes hacerlo. Actúa, no estas sólo. El mundo os necesita. Es el momento de actuar, de hacer que las cosas ocurran, de liberar vuestra grandeza.</p>
             </div>
-        </div>        
-    </section>
-    <!-- Fin Sección Héroes -->
-    
-    <!-- Sección Nosotros -->
-    <section id="nosotros">
-        <div class="container">
-            <h5 class="section-title wow fadeIn" data-wow-delay=".2s">
-            Net&Co es una entidad formada por y para universitarios, que persigue dinamizar el entorno académico apostando por el talento y fomentando el emprendimiento</h5>
-            <div class="row">
-                <div class="col-md-4 wow fadeInUp">
-                    <div class="borderDerecha">
-                        <div class="service-box">
-                            <div class="content">
-                                <div class="icon-wrapper">
-                                    <img src="{{ asset('fonts/amigos.svg') }}"><!--<i class="fa fa-users"></i>-->
-                                </div>
-                                <h2>Amigos</h2>
-                                <p>Somos universitarios como tú, con ganas de aprovechar este momento en algo más que para jugar al mus. Creemos que podemos cambiar las cosas, queremos dejar huella.</p>
-                                <br><br><br><!--Igualar contenedores-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 wow fadeInUp" data-wow-delay=".2s" data-wow-offset="10">
-                    <div class="borderDerecha">
-                        <div class="service-box">
-                            <div class="content">
-                                <div class="icon-wrapper">
-                                    <img class="engranaje" src="{{ asset('fonts/engranajes.svg') }}"><!--<i class="fa fa-cogs"></i>-->
-                                </div>
-                                <h2>Intercambio</h2>
-                                <p>Un grupo con perfiles académicos heterogéneos procedentes de las distintas universidaddes de España, unido a los diversos encuentros con emprendedores que promovemos. Hacen de Net&Co un marco perfecto para compartir experiencias y conocimientos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 wow fadeInUp" data-wow-delay=".4s" data-wow-offset="10">
-                    <div class="service-box">
-                        <div class="content">
-                            <div class="icon-wrapper">
-                                <img src="{{ asset('fonts/bombilla.svg') }}"><!--<i class="fa fa-lightbulb-o"></i>-->
-                            </div>
-                            <h2>Emprendimiento</h2>
-                            <p>Si algo nos une, es la pasión por el emprendimiento. Juntos constituimos un hub multidisciplinar perfecto con el que poder llevar a cabo nuestras ideas y proyectos.</p>
-                            <br><br><br><!--Igualar contenedores-->
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-5 col-md-offset-1 wow fadeInUp" data-wow-delay=".2s" data-wow-offset="10">
+            <div class="content2">
+              <p>"Un héroe es toda persona que encuentra la fuerza para preservar y continuar a pesar de los obstaculos."</p>
+              <p><i>Christopher Reeve</i></p>
             </div>
+          </div>
         </div>
+      </div>        
     </section>
-    <!-- Fin Sección Nosotros -->
     
-    <!-- Sección Somos Talento -->
-    <section id="somosTalento" class="section-somosTalento">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div>
-                        <h2 class="wow fadeInUp">SOMOS TALENTO</h2>
-                    </div>
-                    <div class="col-sm-5 col-md-6">
-                        <div class="main-text">
-                            <p>La <strong>incubadora de proyectos</strong> que agrupa a los jóvenes de más talento de nuestro país, creando un marco adecuado para que tomen forma las ideas y se hagan realidad los proyectos de forma conjunta y <strong>colaborativa</strong>.</p>
-                            <hr>
-                            <h3 class="wow fadeInDownBig">HUB</h3>
-                            <p>Captamos y concentramos a jóvenes talentos con perfiles heterogéneos procedentes de las diferentes universidades y centros formativos de nuestro país. Fomentando el intercambio y la colaboración.</p>
-                            <h3 class="wow fadeInDownBig">EQUIPO</h3>
-                            <p>Un equipo de trabajo multidisciplinar formado por los alunos más destacados en las diferentes áreas relacionadas con el mundo del emprendimiento. Desde ingenieros, economistas, abogados, maketinianos o diseñadores, entre otros.</p>
-                            <p>Un equipo autosuficiente con el que poder desarrollar tus ideas desde cero, o colaborar en el desarrollo de aqullos proyectos en gestación.</p>
-                            <h3 class="wow fadeInDownBig">LANZADERA</h3>
-                            <p>Existe una implicación directa en cada uno de los proyectos que son incubados en Net&Co, poniendo a su disposición los recursos necesarios tanto humanos como financieros.</p>
-                            <p>Net&Co es una organización sin ánimo de lucro que invierte, los fondos captados, proporcionalmente en todos los proyectos en incubación.</p>
-                        </div>
-                    </div>
-                    <div class="imgnet col-sm-5 col-md-4">
-                        <img src="{{ asset('img/3_Somos_talento/infografía_dibujitos/infoDibujitos_500x751.png') }}">
-                    </div>
+    <section id="us">
+      <div class="content-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="wow fadeIn" data-wow-delay=".2s">
+              Net&Co es una entidad formada por universitarios y emprendedores, que persigue dinamizar el entorno académico apostando por el talento y fomentando el emprendimiento.</h3>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-secundary">
+        <div class="container">
+          <div class="row row-eq-height">
+            <div class="col-xs-12 col-sm-12 col-md-4 wow fadeInUp">
+              <div class="row content">
+                <div class="col-xs-3 col-md-12">
+                  <i class="fa fa-users"></i>
+                  <h4 class="text-center visible-md visible-lg"><u>Contactos</u></h4>
+                </div>
+                <div class="col-xs-9 col-md-12">
+                  <p>
+                    Ser una red de contactos de calidad para desarrollar ideas y proyectos, nos convierte en el entorno adecuado para empezar a establecer o fortalecer tus relaciones profesionales. Una buena red de contactos es un gran paso hacia tus sueños.
+                  </p>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <span class="separator"></span>
+            <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay=".2s" data-wow-offset="10">
+              <div class="row content">
+                <div class="col-xs-3 col-md-12 col-lg-12 col-xs-push-9 col-md-push-0">
+                  <i class="fa fa-cogs"></i>
+                  <h4 class="text-center visible-md visible-lg"><u>Intercambio</u></h4>
+                </div>
+                <div class="col-xs-9 col-md-12 col-lg-12 col-xs-pull-3 col-md-pull-0">
+                  <p>
+                    Ser un grupo con perfiles académicos heterogéneos procedentes de distintas universidades de España, junto a los diversos encuentros con emprendedores que promovemos; hacen de Net&Co un marco perfecto para compartir experiencias y conocimientos.
+                  </p>
+                </div>
+              </div>  
+              <hr>
+            </div>
+            <span class="separator"></span>
+            <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay=".4s" data-wow-offset="10">
+              <div class="row content">
+                <div class="col-xs-3 col-md-12">
+                  <i class="fa fa-lightbulb-o"></i>             
+                  <h4 class="text-center visible-md visible-lg"><u>Emprendimiento</u></h4>
+                </div>
+                <div class="col-xs-9 col-md-12">
+                  <p>
+                    Si algo nos une, es la pasión por el emprendimiento. Juntos constituimos un hub o concentrador multidisciplinar con el que poder llevar a cabo nuestras ideas y proyectos.s.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="talent">
+      <div class="container">
+        <div class="row">
+          <h3 class="wow fadeInUp">SOMOS TALENTO</h3>
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="row">
+              <div class="col-md-12 main-text">
+                <p>
+                  <strong>Incubadora</strong> de proyectos que agrupa a jóvenes y emprendedores con talento, creando un marco adecuado para que tomen forma las ideas y se hagan realidad los proyectos de forma conjunta y <strong>colaborativa</strong>.
+                </p>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10">
+                <h4 class="wow fadeInDownBig"><u>HUB</u></h4>
+                <p class="text-left">
+                  Captamos y concentramos a jóvenes con perfiles heterogéneos procedentes de las diferentes universidades y centros formativos de nuestro país. Fomentando el intercambio y la colaboración.
+                <p class="text-left">
+                  Canalizamos y tangibilizamos dicho talento a través de la creación de grupos de trabajo que colaboran entre sí para el desarrollo de proyectos de forma conjunta.
+                </p>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10 col-md-offset-2">
+                <h4 class="wow fadeInDownBig"><u>EQUIPO</u></h4>
+                <p class="text-left">
+                  Un equipo de trabajo multidisciplinar formado por los alunos más destacados en las diferentes áreas relacionadas con el mundo del emprendimiento. Desde ingenieros, economistas, abogados, maketinianos o diseñadores, entre otros.</p>
+                <p class="text-left">
+                  Un equipo autosuficiente con el que poder desarrollar tus ideas desde cero, o colaborar en el desarrollo de aqullos proyectos en gestación.</p>
+              </div>
+            </div>
+            <div class="col-md-10">
+              <h4 class="wow fadeInDownBig"><u>LANZADERA</u></h4>
+              <p class="text-left">
+                Existe una implicación directa en cada uno de los proyectos que son incubados en Net&Co, poniendo a su disposición los recursos necesarios tanto humanos como financieros.</p>
+              <p class="text-left">
+                Net&Co es una organización sin ánimo de lucro que invierte, los fondos captados, proporcionalmente en todos los proyectos en incubación.</p>
+            </div>
+          </div>
+          <div class="col-md-6 visible-md visible-lg">
+            <img src="{{ asset('img/3_somos_talento/images/infoDibujitos_500x751.png') }}" class="center-block">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="connecting-talent">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-md-push-6 wow fadeInUp image">
+            <img src="{{ asset('img/4_conectamosTalento/logoFlechas_289x127.png') }}" class="center-block">
+          </div> 
+          <br> 
+          <div class="clearfix visible-xs vicible-sm"></div>
+          <div class="col-sm-12 col-sm-12 col-md-6 col-md-pull-4 wow fadeInUp text">
+            <h3><u>Conectando talento</u></h3>
+            <p class="text-left">
+              La colaboración y el intercambio son nuestros cimiento. Creamos un marco dónde establecer lazos de interés (networking) y colaborar en el desarrollo de proyectos (coworking).
+            </p>
+          </div> 
+        </div>
+      </div>             
+    </section>
+
+    <section id="slider">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="{{ asset('/img/5_Descubrir,relacionar,brillar/biciPuente/biciPuente_1606x544.png') }}" alt="Objetivos">
+            <div class="carousel-caption">
+              <h3>Descubrir, Relacionar y Brillar</h3>
+              <br><br>
+              <h4 class="animation animated-item-2">Nuestro objetivo: <b>Saber de qué somos capaces juntos.</b></h4>
+              <br>
+              <p>El mundo que nos rodea nos contempla como un vaso vacío que debe llenar de contenido. Nosotros creemos que somos hogueras llenas de potencial que debemos prender y avivar, descubriendo sus verdaderas pasiones y motivaciones.</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{{ asset('/img/5_Descubrir,relacionar,brillar/brillar/brillar_1606x544.png') }}" alt="Descubir">
+            <div class="carousel-caption">
+              <h3 class="animation animated-item-1">Descubrir</h3>
+              <br><br>
+              <h4 class="animation animated-item-2"><b>¿Sabes de lo que eres capaz?.</b></h4>
+              <br>
+              <p class="animation animated-item-2">
+                Uno de nuestros objetivos es descubrir talento,  para ello periódicamente organizamos diferentes encuentros o acciones en las que retamos a jóvenes y emprendedores a mostrar su mejor versión. 
+                <br>
+                Net&Co es una entidad que cobra vida gracias al intercambio de talento. Grandes ideas están esperando a que compartas tu talento con el nuestro.
+              </p> 
+            </div>
+          </div>
+          <div class="item">
+            <img src="{{ asset('/img/5_Descubrir,relacionar,brillar/descubrir/descubrir_1606x544.png') }}" alt="Relacionar">
+            <div class="carousel-caption">
+              <h3 class="animation animated-item-1">Relacionar</h3>
+              <br><br>
+              <h4 class="animation animated-item-2"><b>No sabes de los que somos capaces juntos. </b></h4>
+              <br>
+              <p class="animation animated-item-2">
+                Funcionamos como un gran equipo de trabajo flexible. Internamente nos estructuramos en grupos de trabajo abiertos y multidisciplinares, en constante relación.
+                <br>
+                Compartimos experiencias, ideas, ilusiones y conocimientos entre nosotros y con infinidad de emprendedores, empresas y profesionales a través de nuestras jornadas de intercambio, encuentros y eventos
+              </p> 
+            </div>
+          </div>
+          <div class="item">
+            <img src="{{ asset('/img/5_Descubrir,relacionar,brillar/relacionar/relacionar_1606x544.png') }}" alt="Brillar">
+            <div class="carousel-caption">
+              <h3 class="animation animated-item-1">Brillar</h3>
+              <br><br>
+              <h4 class="animation animated-item-2"><b>Mostrémoslo al mundo.</b></h4>
+              <br>
+              <p class="animation animated-item-2">
+                Cada uno de nuestros compañeros o grupos de trabajo puede plantear sus ideas en nuestras jornadas DEMO, siendo evaluadas por todos los miembros de Net&Co. Es la valoración de la mayoría quién decide qué proyectos son incubados.
+                <br>
+                Net&Co destina recursos y grupos de trabajo para la incubación de dichos proyectos.
+                <br>
+                Todos trabajamos codo con codo, todos somos uno.
+              </p> 
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+   
+    <section id="dreams" data-offset-top="300" class="visible-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="box">
+              <h3 class="text-center"><strong>Tienes la responsabilidad de hacer realidad tus sueños</strong></h3>
+              <br><hr><br>
+              <p class="text-justify">
+                Necesitamos líderes que inspiren con sus acciones. Cada soñador que hace realidad sus sueños, motiva a cientos a que persigan sus ideas e impacta en miles para que empiecen a soñar.</p>
+              <p class="text-justify">
+                Creemos que podemos influir positivamente en la vida de infinidad de personas, enriqueciendo nuestras universidades y comunidades, ayudando a mejorar no sólo nuestro entorno, sino el mundo.</p>
+              <p class="text-justify">
+                Qué mejor fuente de inspiración que emprendedores como tú y como nosotros, jóvenes llenos de ilusión y pasión por aprender.</p>
+              <p class="text-justify">
+                Creemos en ti. Únete al movimiento. Únete a Net&Co.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 nopadding-left">
+            <div class="col-lg-6 nopadding">
+              <img src="{{ asset('img/6_MuralCitas/square_1.jpg') }}" class="img-responsive" alt="Leather Seats">
+                <div class="mask-black">
+                  <h3>Cambiando vidas</h3>
+                  <p>"Si tus acciones inspiran a otros a soñar más, aprender más, hacer más y ser más, eres un líder."</p>
+                  <p><i>Jhon Quincy Adams</i></p>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Fin Sección Somos Talento -->
-    
-    <!-- Sección Conectando Talento -->
-    <section id="conectandoTalento">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 wow fadeInUp">
-                    <div class="service-box2">
-                        <div class="content2">
-                            <img src="{{ asset('img/4_conectamosTalento/logoFlechas_289x127.png') }}">
-                        </div>
-                    </div>
-                </div>  
-                <div class="col-md-6 wow fadeInUp">
-                    <div class="service-box1">
-                        <div class="content1">
-                            <h3>Conectando talento</h3>
-                            <p>Creamos un marco donde la colaboración y el intercambio son la clave, dónde establecer lazos de interés (networking) y colaborar en el desrrollo de proyectos (coworking).</p>
-                        </div>
-                    </div>
+            <div class="col-lg-6 nopadding">
+              <img src="{{ asset('img/6_MuralCitas/square_2.jpg') }}" class="img-responsive" alt="Leather Seats">
+                <div class="mask-blue">
+                    <p>"Los que están lo suficientemente locos como para pensar que pueden cambiar el mundo, son los que lo hacen."</p>
+                    <p><i>Steve Jobs</i></p>
+                </div>
+            </div>
+            <div class="col-lg-6 nopadding">
+              <img src="{{ asset('img/6_MuralCitas/square_3.jpg') }}" class="img-responsive" alt="Leather Seats"> 
+                <div class="mask-blue">
+                    <p>"Sueña la clase de mundo en el que quieras vivir. Sueño en voz alta."</p>
+                    <p><i>Bono</i></p>
                 </div> 
             </div>
-        </div>             
-    </section>
-    <!-- Fin Sección Conectando Talento -->
-    
-    <!-- Sección Slide -->
-    <section id="main-slider" class="no-margin">
-        <div class="carousel slide wet-asphalt">
-            <ol class="carousel-indicators">
-                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#main-slider" data-slide-to="1"></li>
-                <li data-target="#main-slider" data-slide-to="2"></li>
-                <li data-target="#main-slider" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item item1 active">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="carousel-content centered">
-                                    <h2 class="animation animated-item-1">Descubrir, Relacionar y Brillar</h2>
-                                    <h4 class="animation animated-item-2">Nuestro objetivo: Saber de qué somos capaces juntos</h4>
-                                    <p class="animation animated-item-2">
-                                    El sistema educativo contempla al estudiante como un vaso vacío que debe llenar de contenido. Nosotros creemos que somos hogueras llenas de potencial que debemos prender y avivar, descubriendo sus verdaderas pasiones y motivaciones.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item item2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="carousel-content centered">
-                                    <h2 class="animation animated-item-1">Brillar</h2>
-                                    <h4 class="animation animated-item-2">Mostrémoselo al mundo</h4>
-                                    <p class="animation animated-item-2">
-                                    Cada uno de nuestros compañeros o grupos de trabajo puede planear sus ideas en nuestras jornadas DEMO, siendo evaluadas por todos los miembros de Net&Co. Es la valoración de la mayoría, quién decide que proyectos son incubados y cuales no.
-                                    <br>Net&Co destina sus recursos y designa grupos de trabajo para la incubación de dichos proyectos.
-                                    <br>Todos trabajamos codo con codo, todos somos uno.
-                                    </p>                                          
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item item3">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="carousel-content centered">
-                                    <h2 class="animation animated-item-1">Descrubrir</h2>
-                                    <h4 class="animation animated-item-2">¿Sabes de los que eres capaz?</h4>
-                                    <p class="animation animated-item-2">
-                                    Periodicamente habilitamos el acceso a nuevos socios, organizando diferentes encuentros o acciones a través de la web o en las propias universidades, para recoger solicitudes de inscripción.
-                                    <br>Sólo aquellos que logran superar la prueba de selección y una entrevista personal, seran miembros de Net&CO. 
-                                    <br>¿Te atreves a ser uno de los mejores?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item item4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="carousel-content centered">
-                                    <h2 class="animation animated-item-1">Relacionar</h2>
-                                    <h4 class="animation animated-item-2">No sabes de los que somos capaces juntos</h4>
-                                    <p class="animation animated-item-2">
-                                    Funcionamos como un gran equipo de trabajo flexible. Internamente nos estructuramos en grupos de trabajo abiertos y multidisciplinares, que están en constante relacionción unos con otros.
-                                    <br>Compartimos experiencias, ideas, ilusiones y conocimientos a través de nuestras jornadas de interambio, encuentros y eventos.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-6 nopadding">
+              <img src="{{ asset('img/6_MuralCitas/square_4.jpg') }}" class="img-responsive" alt="Leather Seats">
+              <div class="mask-black">
+                  <h3>Motivar es crear</h3>
+                  <p>"Puedes tener éxito en casi cualquier cosa para la que tengas una motivación desenfrenada."</p>
+                  <p><i>Zig Ziglar</i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 nopadding-right">
+            <div class="col-md-6 nopadding">
+              <img src="{{ asset('img/6_MuralCitas/square_5.jpg') }}" class="img-responsive" alt="Leather Seats">
+                <div class="mask-black">
+                    <h3>No existe el fracaso</h3>
+                    <p>"El éxito no es final... El fracaso no es fatal... es el coraje para continuar lo que cuenta."</p>
+                    <p><i>Winston Churchill</i></p>
                 </div>
             </div>
+            <div class="col-md-6 nopadding">
+              <img src="{{ asset('img/6_MuralCitas/square_6.jpg') }}" class="img-responsive" alt="Leather Seats">
+                <div class="mask-blue">
+                  <p>"La pregunta más persistente y urgente de la vida es: ¿Que estas haciendo por los demás?"</p>
+                  <p><i>Martin Luther King</i></p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 nopadding-left">
+            <div class="col-lg-6 nopadding">
+              <img src="{{ asset('img/6_MuralCitas/square_7.jpg') }}" class="img-responsive" alt="Leather Seats">
+                <div class="mask-black">
+                    <h3>Cree en ti</h3>
+                    <p>"Un hombre con una nueva idea es un loco hasta que ésta triunfa."</p>
+                    <p><i>Mark Twain</i></p>
+                </div>
+            </div>
+            <div class="col-lg-6 nopadding">
+              <img src="{{ asset('img/6_MuralCitas/square_8.jpg') }}" class="img-responsive" alt="Leather Seats">
+                <div class="mask-blue">
+                  <p>"Recordemos: Un libro, un lápiz, un niño y un maestro pueden cambiar el mundo."</p>
+                  <p><i>Malala Yousafzai</i></p>
+                </div>
+            </div>
+          </div>
         </div>
-        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
-            <i class="icon-angle-left"></i>
-        </a>
-        <a class="next hidden-xs" href="#main-slider" data-slide="next">
-            <i class="icon-angle-right"></i>
-        </a>
+      </div>
     </section>
-    <!-- Fin Sección Slide -->
 
-    <!-- Sección Sueños -->
-    <section id="dreams" data-offset-top="300">
-        <div class="container" id="shop">
-            <div class="row">
-                <div class="col-lg-6 nopadding">
-                    <div class="mid-box box">
-                        <h2>Tienes la responsabilidad de hacer realidad tus sueños</h2>
-                        <p>Necesitamos líderes que inspiren con sus acciones. Por cada soñador que hace realidad sus sueños, motiva a cietnos a que persigan sus ideas, e impacta en miles para que empiecen a soñar.</p>
-                        <p>Creemos que podemos impactar positivamente en la vida de miles de personas, enriqueciendo nuestras universidades y comunidades, ayudando a mejorar no sólo nuestro entorno, sino el mundo.</p>
-                        <p>Qué mejor fuente de inspiración que estudiantes como tú y como nosotros, jóvenes llenos de ilusión y pasión por aprender. Creemos en ti. Únete al movimiento. Únete a Net&Co. </p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="col-lg-6 nopadding">
-                    <div class="col-lg-6 nopadding">
-                        <div class="img">
-                            <div class="view view-sixth">
-                                <img src="{{ asset('img/6_MuralCitas/square_3.jpg') }}" alt="Leather Seats">
-                                <div class="mask">
-                                    <h3>"Sueña la clase de mundo en el que quiera vivir. Sueña en voz alta."</h3>
-                                    <p><i>Bono</i></p>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="col-lg-6 nopadding">
-                        <div class="img">
-                            <div class="view2 view-sixth2">
-                                <img src="{{ asset('img/6_MuralCitas/square_1.jpg') }}" alt="Leather Seats">
-                                <div class="mask">
-                                    <h3>Cambiando vidas</h3>
-                                    <p>"Si tus acciones inspiran a otros a soñar más, aprender más, hacer más y ser más, eres un líder."</p>
-                                    <p><i>Jhon Quincy Adams</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 nopadding">
-                        <div class="img">
-                            <div class="view2 view-sixth2">
-                                <img src="{{ asset('img/6_MuralCitas/square_4.jpg') }}" alt="Leather Seats">
-                                <div class="mask">
-                                    <h3>Motivar es crear</h3>
-                                    <p>"Puedes tener éxito en casi cualquier cosa para la que tengas una motivación desenfrenada."</p>
-                                    <p><i>Zig Ziglar</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 nopadding">
-                        <div class="img">
-                            <div class="view view-sixth">
-                                <img src="{{ asset('img/6_MuralCitas/square_2.jpg') }}" alt="Leather Seats">
-                                <div class="mask">
-                                    <h3>"Los que están lo suficientemente locos para pensar que pueden cambiar el mundo, son los que lo hacen."</h3>
-                                    <p><i>Steve Jobs</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 nopadding">
-                        <div class="img">
-                            <div class="view2 view-sixth2">
-                                <img src="{{ asset('img/6_MuralCitas/square_7.jpg') }}" alt="Leather Seats">
-                                <div class="mask">
-                                    <h3>Cree en ti</h3>
-                                    <p>"Un hombre con una nueva idea es un loco hasta que ésta triunfa."</p>
-                                    <p><i>Mark Twain</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 nopadding">
-                        <div class="img">
-                            <div class="view view-sixth">
-                                <img src="{{ asset('img/6_MuralCitas/square_8.jpg') }}" alt="Leather Seats">
-                                <div class="mask">
-                                    <h3>"Recordemos: Un libro, un lápiz, un niño y un maestro puede cambiar el mundo."</h3>
-                                    <p><i>Malala Yousafzai</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 nopadding">
-                    <div class="img">
-                        <div class="view2 view-sixth2">
-                            <img src="{{ asset('img/6_MuralCitas/square_5.jpg') }}" alt="Leather Seats">
-                            <div class="mask">
-                                <h3>No existe el fracaso</h3>
-                                <p>"El éxito no es final... El fracaso no es fatal... es el coraje para continuar lo que cuenta."</p>
-                                <p><i>Winston Churchill</i></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 nopadding">
-                    <div class="img">
-                        <div class="view view-sixth">
-                            <img src="{{ asset('img/6_MuralCitas/square_6.jpg') }}" alt="Leather Seats">
-                            <div class="mask">
-                                <h3>"La pregunta más persistente y urgente de la vida es: ¿Que estas haciendo por los demás?"</h3>
-                                <p><i>Martin Luther King</i></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 nopadding">
-                    <div class="img">
-                        <div class="view2 view-sixth2">
-                            <img src="{{ asset('img/6_MuralCitas/square_7.jpg') }}" alt="Leather Seats">
-                            <div class="mask">
-                                <h3>Cree en ti</h3>
-                                <p>"Un hombre con una nueva idea es un loco hasta que ésta triunfa."</p>
-                                <p><i>Mark Twain</i></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 nopadding">
-                    <div class="img">
-                        <div class="view view-sixth">
-                            <img src="{{ asset('img/6_MuralCitas/square_8.jpg') }}" alt="Leather Seats">
-                            <div class="mask">
-                                <h3>"Recordemos: Un libro, un lápiz, un niño y un maestro puede cambiar el mundo."</h3>
-                                <p><i>Malala Yousafzai</i></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="we-do">
+      <div class="container">
+        <div class="row">       
+          <h4 class="wow fadeInUp" data-wow-delay=".2s">Agrupamos talento</h4>
+          <h4 class="wow fadeInUp" data-wow-delay=".4s">Compartimos conocimientos</h4>
+          <h4 class="wow fadeInUp" data-wow-delay=".8s">Desarrollamos proyectos</h4>
         </div>
+      </div>
     </section>
-    <!-- Fin Sección Sueños -->
-    
-    <!-- Sección antesFooter -->
-    <section id="antesFooter">
-        <div class="container">
-            <div class="row">       
-                <h4 class="description wow fadeInUp" data-wow-delay=".2s">Agrupamos talento</h4>
-                <h4 class="description wow fadeInUp" data-wow-delay=".4s">Compartimos conocimientos</h4>
-                <h4 class="description wow fadeInUp" data-wow-delay=".8s">Desarrollamos proyectos</h4>
-            </div>
-        </div>
-    </section>
-    <!-- Fin Sección antesFooter -->
 
-    <!-- Sección Footer -->
     <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 copyright">
-                    <p class="copy">©Net&Co 2015.</p>
-                    <p>Todos los derechos reservados</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <a href="#contacto" onclick="muestra_oculta('contacto')" class="btn-footer">¿HABLAMOS?</a>
-                </div>
-                <div class="col-md-4 social-icons">
-                    <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-            </div>  
-        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-7 col-sm-6 col-md-4 copyright">
+              <span class="company">©Net&Co 2016.</span>
+              <br>
+              <span>Todos los derechos reservados</span>
+          </div>
+          <div class="col-xs-5 col-sm-6 col-md-4 cols-md-push-4 social-icons">
+            <a class="btn btn-facebook" href="https://www.facebook.com/netandco/" target="_blank" role="button">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a class="btn btn-twitter" href="https://twitter.com/netandco" target="_blank" role="button">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-md-pull-4 text-center">
+            <a class="btn btn-default" href="#contacto" role="button" onclick="muestra_oculta('contacto')">¿HABLAMOS?</a>
+          </div>
+        </div>  
+      </div>
     </footer>
-    <!-- Fin Sección Footer -->
-    
-    <!-- Sección Contacto -->
-    <section id="contacto">
-        <div class="overlay">
-            <div class="container">
-                <h1 class="section-title wow fadeIn" data-wow-delay=".2s">En este momento no podemos atenderte, estamos haciendo cosas molonas. Dejanos un mensaje después del BIP.</h1>
-                <h2 class="section-title wow fadeInUp" data-wow-delay="1.2s">¡¡¡BIPPP!!!</h2>
-                <div class="row">
-                    <div class="contact-form">
-                        <form role="form" method="post" action="{{ path('contactEmail') }}">
-                            <div class="col-sm-6 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
-                                <div class="controls">
-                                    <input class="contact_input" type="text" name="name" placeholder="Nombre">
-                                    <i class="fa fa-user"></i>
-                                </div>
-                                <div class="controls">
-                                    <input class="contact_input" type="text" name="email" placeholder="Email">
-                                    <i class="fa fa-envelope-o"></i>
-                                </div>
-                                <div class="controls">
-                                    <input class="contact_input" type="text" name="phone" placeholder="Teléfono">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 wow fadeInRight" data-wow-delay="0.2s">
-                                    <textarea name="message" rows="7" class="form-control" placeholder="Mensaje"></textarea>
-                            </div>
-                            <div class="col-sm-6 col-md-12 wow" data-wow-delay="0.5s">
-                                <button type="submit" id="submit" class="btn btn-common">COLGAR</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </section>
-    <!-- Fin Sección Contacto -->
 
-    <!-- Sección Scroll Top -->
+    <section id="contact">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <hr>
+            <h3 class="wow fadeIn" data-wow-delay=".2s">En este momento no podemos atenderte, estamos haciendo cosas molonas. Dejanos un mensaje después del BIP.</h3>
+            <h4 class="wow fadeInUp" data-wow-delay="1.2s">¡¡¡BIPPP!!!</h4>
+            <div class="contact-form">
+              <form role="form" method="post" action="{{ path('contactEmail') }}">
+                <div class="col-sm-6 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                      <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
+                      <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                  </div> 
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                      <input type="phone" class="form-control" id="phone" placeholder="Teléfono">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 wow fadeInRight" data-wow-delay="0.2s">
+                  <textarea name="message" rows="7" class="form-control" placeholder="Mensaje"></textarea>
+                </div>
+                <div class="col-sm-12 col-md-12 wow fadeInRight" data-wow-delay="0.2s">
+                  <button type="submit" class="btn btn-default">COLGAR</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+
     <div class="scroll-top" data-spy="affix" data-offset-top="300">
-        <a href="#header"><i class="fa fa-angle-up"></i></a>
+      <a href="#header"><i class="fa fa-angle-up"></i></a>
     </div>
-    <!-- Sección Scroll End -->
-    
+
 {% endblock %}

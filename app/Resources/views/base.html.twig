@@ -10,12 +10,8 @@
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-         <!-- Bootstrap  -->
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" >
-        <!-- icon fonts font Awesome -->
-        <link rel="stylesheet" href="{{ asset('fonts/font-awesome/font-awesome.min.css') }}" media="screen">
-        <!-- Custom Styles -->
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}" >
+        <!-- Css -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}" >
        
         {% block stylesheets %}{% endblock %}
 
@@ -24,11 +20,7 @@
     <body>
         {% block body %}{% endblock %}
 
-        <!-- Include jquery.min.js plugin -->
-        <script src="{{ asset('js/jquery-min.js') }}"></script>
-        <!-- Javascript bootstrap -->
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-        <!-- Custom JavaScript -->
+        <!-- JavaScript -->
         <script src="{{ asset('js/app.js') }}"></script>
         {% block javascripts %}{% endblock %}
     </body>

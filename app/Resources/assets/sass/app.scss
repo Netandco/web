@@ -1,0 +1,503 @@
+// Add custom font
+@font-face {
+    font-family: 'AzoSans-Regular';
+    src: url(../fonts/AzoSans-Regular.otf);
+}
+@font-face {
+    font-family: 'AzoSans-Bold';
+    src: url(../fonts/AzoSans-Bold.otf);
+}
+@font-face {
+    font-family: 'AzoSans-Italic';
+    src: url(../fonts/AzoSans-Italic.otf);
+}
+$font-family-base: 'AzoSans-Regular', sans-serif;
+
+
+// Import bootstrap and fontawesome
+@import "bootstrap";
+@import "font-awesome";
+//@import "main";
+//@import "sl-slide";
+//@import "style";
+//@import "responsive";
+//@import "normalize";
+@import "animate";
+
+body { 
+  padding-top: 50px; }
+
+@media (min-width:768px) { 
+ .navbar > .container {
+    text-align: center;
+ }
+ .navbar .navbar-nav {
+    float: none;
+    display: inline-block;
+    clear: none;
+ }
+ .navbar .navbar-nav > li {
+    float: none;
+    display: inline-block;
+ }
+}
+
+// From screen of moviles or tablets
+#intro {
+  background: url(../img/1_libera_tu_grandeza/png/creemosJuntos_1199x606.png) center right no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  .main-text {
+    font-size: 2.000rem;
+    margin: 100px 0px ;
+  }
+}
+
+#us {
+  .content-main {
+    padding-top: 1rem;
+    background-color: $brand-primary;
+    color: #fff;
+    h3 {
+      text-align: center;
+      font-size: 1.000rem;}
+  }
+  .content-secundary{
+    background-color:  #fff;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    .row-eq-height {display:block;}
+    hr {
+      border-color: $brand-primary;
+      width: 60%}
+    .content {  
+      font-size: 0.850rem;
+      i {
+        font-size: 4rem;
+        color: $brand-primary;
+        margin-top: 1.5rem;}
+      h4 {
+        font-size: 1.375rem;
+        margin: 1.5rem 0;}
+      p {text-align: left;}
+    }
+  }
+}
+
+#talent {
+  background: url(../img/3_somos_talento/background/SomosTalento_1199x1044.png) center center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  height: 100%;
+  h3 {
+    font-size: 2.0rem;
+    color: $brand-primary;
+    margin-bottom: 2rem;
+  }
+  .main-text {
+    font-size: 1.000rem;
+  }
+  h4 {
+    font-size: 1.375rem;
+    color: $brand-primary;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+#connecting-talent {
+  padding: 3rem 0;
+  .text {
+    margin-left: 0;
+    border-left: none;
+    font-size: 1rem;
+    h3 {
+      font-family: 'AzoSans-Bold';
+      font-size: 1.375rem;
+      color: $brand-primary;}
+  }
+}
+
+#we-do {
+  background-color: $brand-primary;
+  padding: 3em 0em;
+  font-family: 'AzoSans-Bold';
+  text-align: center;
+  color:  #fff;
+  h4 {font-size: 1.500rem;}
+}
+
+#slider {
+  .carousel-indicators .active {background-color: $brand-primary;}
+  .carousel-inner > .item > img {max-width: none;}
+  .carousel-caption{
+    right: 10%;
+    left: 10%;
+    top: 0;
+    bottom: none;
+    h3 {
+      font-family: 'AzoSans-Bold';
+      font-size: 1.750rem;
+      color: $brand-primary;}
+    h4 {font-size: 1.375rem;}
+    p {font-size: 1rem;}
+  }
+}
+
+#footer {
+  padding-top:1rem;
+  padding-bottom:1em;
+  .copyright {
+    color: #CCC;
+    font-size: 0.750rem;
+    .company {color:#666;}
+  }
+  .btn {
+    margin-top: 1rem;
+    border: 2px solid $brand-primary;
+    border-radius:5px;
+    background: $brand-primary;
+    color: #fff;
+    font-size: 1.025rem;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    &:hover, :active {
+      color: $brand-primary;
+      background: #fff;
+      text-decoration:none;}
+  }
+  .social-icons {
+    text-align: right;
+    .btn {
+      margin-top: 0;
+      border: none;
+      background-color: #fff;
+      font-size: 1.0rem;
+      width: 3rem;}
+    .btn-facebook {
+      color: #3b5998;
+      &:hover {
+        background-color: #3b5998;
+        color: #fff;}
+    }
+    .btn-twitter {
+      color: #00aced;
+      &:hover {
+        background-color: #00aced;
+        color: #fff;}
+    }
+  }
+}
+
+#contact {
+  background: $brand-primary;
+  text-align: center;
+  color: #fff;
+  h3 {font-size: 1.500rem;}
+  h4 {font-size: 1.000rem;}
+  .btn {
+    color: $brand-primary;
+    font-weight: 300;
+    margin-top: 30px;
+    font-size: 24px;
+    width: 100%;
+    margin: 20px 0;
+    &:hover{
+      color: #fff;
+      background-color: rgba($brand-primary,.2);
+    }
+  }
+}
+
+// From screens mediun or large
+@media (min-width: $screen-md-min) { 
+
+  #intro {
+    background: url(../img/1_libera_tu_grandeza/png/creemosJuntos_1199x606.png) center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align:center;
+    .main-text {
+      font-size: 5.000rem;
+      margin: 202px 0px ;
+    }
+  }
+
+  #heroes {
+    padding-top:2rem;
+    padding-bottom:2rem;
+    .content1 {
+      text-align: left;
+      font-size: 1rem;
+      h3 {font-size: 1.625rem;}
+    }
+    .content2 {
+      font-size: 1.375rem;
+      text-align: center;
+      margin-top: 15%;
+      i {font-size: 0.875rem;}
+    }
+  }
+
+  #us {
+    .content-main {
+      padding-top: 2rem;
+      h3 {
+        text-align: center;
+        font-size: 1.375rem;}
+    }
+    .content-secundary {
+      background-color: $brand-primary;
+      color: #fff;
+      .separator:after {
+        content: '';
+        display: block;
+        float: left;
+        background: #fff;
+        margin: 0;
+        height: 90%;
+        width: 1px;
+      }
+      .row-eq-height {display: flex;}
+      .content {
+        padding: 0px 15%;
+        font-size: 1rem;
+        text-align: center;
+        i {font-size: 4rem;
+          color: #fff;}
+        h4 {
+          font-size: 1.375rem;
+          margin: 1.5rem 0;}
+        p {text-align: justify;}
+      }
+    }
+  }
+
+  #talent {
+    background: url(../img/3_somos_talento/background/SomosTalento_1199x1044.png) center center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-align: left;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    height: 100%;
+    h3 {
+      font-size: 5.0rem;
+      color: $brand-primary;
+    }
+    .main-text {
+      font-size: 1.375rem;
+    }
+    h4 {
+      font-size: 1.375rem;
+      color: $brand-primary;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  #connecting-talent {
+    padding: 3rem 0;
+    .text {
+      margin-left: 5%;
+      border-left: 0.35rem solid $brand-primary;
+      font-size: 1rem;
+      h3 {
+        font-family: 'AzoSans-Bold';
+        font-size: 1.375rem;
+        color: $brand-primary;}
+    }
+  }
+
+  #we-do {
+    background-color: $brand-primary;
+    padding: 3em 0em;
+    font-family: 'AzoSans-Bold';
+    text-align: center;
+    color:  #fff;
+    h4 {font-size: 2.750rem;}
+  }
+
+  #slider {
+    img { width: 100%;}
+    .carousel-indicators .active {background-color: $brand-primary;}
+    .carousel-caption{
+      top: 0;
+      bottom: none;
+      h3 {
+        font-family: 'AzoSans-Bold';
+        font-size: 2.750rem;
+        color: $brand-primary;}
+      h4 {font-size: 1.375rem;}
+      p {font-size: 1rem;}
+    }
+  }
+
+  #dreams {
+    .box{
+      padding: 2rem;
+      h3 {
+        font-size: 1.625rem;
+        color: $brand-primary;}
+      hr {border-color: $brand-primary;}
+      p {font-size: 1rem;}
+    }
+    .mask-blue, .mask-black {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      color: #fff;
+      text-align: center;
+      p {
+        font-size: 1rem;
+        line-height: 1rem;
+        position: relative;
+        padding: 1.5rem 2rem 0.5rem;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        background: transparent;
+        margin-top: 2.5rem;
+        transform: scale(10);
+        transition: all 0.3s ease-in-out 0.1s;}
+      i {
+        font-size:0.875rem;
+        font-family: 'AzoSans-Italic';}
+      &:hover {
+        filter: alpha(opacity=100);
+        opacity: 1;
+        transition-delay: 0s;
+        p {
+          filter: alpha(opacity=100);
+          opacity: 1;
+          transform: scale(1);
+          transition-delay: 0.1s;}
+      }
+    }
+    .mask-blue {
+      background: rgba($brand-primary,.8);
+      filter: alpha(opacity=0);
+      opacity: 0;
+      transition: all 0.3s ease-in 0.4s;}
+    .mask-black {
+      background: rgba(0,0,0,0.4);
+      filter: alpha(opacity=0);
+      opacity: 1;
+      h3 {
+        position: relative;
+        font-size: 1.250rem;
+        margin-top: 40%;
+        font-family: 'AzoSans-Bold';}
+      &:hover {
+        h3 {
+          margin-top: 2.5rem;
+          transition-delay: 0.1s;}
+        p {margin-top: 1rem;}
+      }
+    }
+  }
+
+  #footer {
+    padding-top:2rem;
+    padding-bottom:1em;
+    .copyright {
+      color: #CCC;
+      font-size: 14px;
+      .company {color:#666;}
+    }
+    .btn {
+      border: 2px solid $brand-primary;
+      border-radius:5px;
+      background: $brand-primary;
+      color: #fff;
+      font-size: 1.025rem;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      &:hover, :active {
+        color: $brand-primary;
+        background: #fff;
+        text-decoration:none;}
+    }
+    .social-icons {
+      text-align: right;
+      .btn {
+        border: none;
+        background-color: #fff;
+        font-size: 1.5rem;
+        width: 3rem;}
+      .btn-facebook {
+        color: #3b5998;
+        &:hover {
+          background-color: #3b5998;
+          color: #fff;}
+      }
+      .btn-twitter {
+        color: #00aced;
+        &:hover {
+          background-color: #00aced;
+          color: #fff;}
+      }
+    }
+  }
+
+}
+
+/* animation from slider
+#ain-slider .active .animation.animated-item-1 {
+  -webkit-animation: fadeInUp 300ms linear 300ms both;
+  -moz-animation: fadeInUp 300ms linear 300ms both;
+  -o-animation: fadeInUp 300ms linear 300ms both;
+  -ms-animation: fadeInUp 300ms linear 300ms both;
+  animation: fadeInUp 300ms linear 300ms both;
+}
+#main-slider .active .animation.animated-item-2 {
+  -webkit-animation: fadeInUp 300ms linear 600ms both;
+  -moz-animation: fadeInUp 300ms linear 600ms both;
+  -o-animation: fadeInUp 300ms linear 600ms both;
+  -ms-animation: fadeInUp 300ms linear 600ms both;
+  animation: fadeInUp 300ms linear 600ms both;
+}
+#main-slider .active .animation.animated-item-3 {
+  -webkit-animation: fadeInUp 300ms linear 900ms both;
+  -moz-animation: fadeInUp 300ms linear 900ms both;
+  -o-animation: fadeInUp 300ms linear 900ms both;
+  -ms-animation: fadeInUp 300ms linear 900ms both;
+  animation: fadeInUp 300ms linear 900ms both;
+}
+#main-slider .active .animation.animated-item-4 {
+  -webkit-animation: fadeInUp 300ms linear 1200ms both;
+  -moz-animation: fadeInUp 300ms linear 1200ms both;
+  -o-animation: fadeInUp 300ms linear 1200ms both;
+  -ms-animation: fadeInUp 300ms linear 1200ms both;
+  animation: fadeInUp 300ms linear 1200ms both;
+}
+*/
+
+// Global style
+.nopadding {
+  padding: 0;
+}
+.nopadding-right {
+  padding-right: 0;
+}
+.nopadding-left {
+  padding-left: 0;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
