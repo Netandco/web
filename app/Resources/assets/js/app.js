@@ -5,5 +5,5 @@ function muestra_oculta(id){
     }
 }
 window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
-    muestra_oculta('contacto');/* "contacto" es el nombre que le dimos al DIV */
+    muestra_oculta('contact');/* "contacto" es el nombre que le dimos al DIV */
 }

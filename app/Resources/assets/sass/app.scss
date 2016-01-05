@@ -11,6 +11,7 @@
     font-family: 'AzoSans-Italic';
     src: url(../fonts/AzoSans-Italic.otf);
 }
+
 $font-family-base: 'AzoSans-Regular', sans-serif;
 
 
@@ -330,6 +331,8 @@ body {
     img { width: 100%;}
     .carousel-indicators .active {background-color: $brand-primary;}
     .carousel-caption{
+      right: 25%;
+      left: 25%;
       top: 0;
       bottom: none;
       h3 {
@@ -416,6 +419,7 @@ body {
       .company {color:#666;}
     }
     .btn {
+      margin-top: 0;
       border: 2px solid $brand-primary;
       border-radius:5px;
       background: $brand-primary;
