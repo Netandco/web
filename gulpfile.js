@@ -43,7 +43,7 @@ var PATHS = {
 
 // Delete the folders css and js
 gulp.task('clean', function(done) {
-  rimraf([PATHS.destDir + '/css', PATHS.destDir + '/js'], done);
+  rimraf([PATHS.destDir + '/css', PATHS.destDir + '/js', PATHS.destDir + '/img', PATHS.destDir + '/fonts'], done);
 });
 
 // Copy files out of the assets folder
