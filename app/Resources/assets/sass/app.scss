@@ -201,8 +201,10 @@ body {
   background: $brand-primary;
   text-align: center;
   color: #fff;
-  h3 {font-size: 1.500rem;}
-  h4 {font-size: 1.000rem;}
+  .text-contact {
+    font-size: 1.500rem;
+    margin-bottom: 1rem;}
+  .bippp {font-size: 1.000rem;}
   .btn {
     color: $brand-primary;
     font-weight: 300;
