@@ -235,8 +235,8 @@
 
   > li > a {
     font-size: 0.67rem;
-    padding-top:    10px;
-    padding-bottom: 10px;
+    padding-top:    16px;
+    padding-bottom: 12px;
     padding-left: 40px;
     padding-right: 40px;
     line-height: $line-height-computed;
@@ -274,8 +274,10 @@
     > li {
       float: left;
       > a {
-        padding-top:    $navbar-padding-vertical;
-        padding-bottom: $navbar-padding-vertical;
+        //padding-top:    $navbar-padding-vertical;
+        //padding-bottom: $navbar-padding-vertical;
+        padding-top:    16px;
+        padding-bottom: 12px;
       }
     }
   }
@@ -399,7 +401,7 @@
 
 // Default navbar
 .navbar-default {
-  background-color: $navbar-default-bg;
+  background: transparentize($navbar-default-bg, 0.1);
   border-color: $navbar-default-border;
 
   .navbar-brand {
