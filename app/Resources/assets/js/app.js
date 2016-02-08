@@ -7,3 +7,8 @@ function muestra_oculta(id){
 window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
     muestra_oculta('contact');/* "contacto" es el nombre que le dimos al DIV */
 }
+
+$(".navbar-nav li").on( "click", function() {
+	$(".navbar-nav li").removeClass("active");
+  	$(this).addClass("active");
+});
