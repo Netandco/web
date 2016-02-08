@@ -1,8 +1,6 @@
 $(document).ready(function() {
     // one page navigation
-    $('#main_navigation_menu').onePageNav({
-            currentClass: 'active'
-    });
+    $('#navbar-collapse').onePageNav();
 
     // About Carousel
   var owl = $("#slide");

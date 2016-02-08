@@ -92,7 +92,7 @@ body {
   background-size: cover;
   color: #ffffff;
   text-align: center;
-  padding-top: 2em;
+  //padding-top: 2em;
   padding-bottom: 2em;
   height: 100%;
   h3 {
@@ -288,7 +288,7 @@ body {
     background-size: cover;
     color: #ffffff;
     text-align: left;
-    padding-top: 2em;
+    //padding-top: 2em;
     padding-bottom: 2em;
     height: 100%;
     h3 {
@@ -506,4 +506,8 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+section.section-wrapper {
+  padding-top: 50px;
 }
