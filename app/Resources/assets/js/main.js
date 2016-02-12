@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('#navbar-collapse').onePageNav();
 
     // About Carousel
-  var owl = $("#slide");
+  var owl = $("#slider");
       owl.owlCarousel({
         slideSpeed: 800,
         paginationSpeed: 400,

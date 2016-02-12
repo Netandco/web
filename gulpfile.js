@@ -35,6 +35,7 @@ var PATHS = {
   ],
   javascript: [
     './bower_components/jquery/dist/jquery.js',
+    './app/Resources/assets/js/jquery.nav.js',
     './bower_components/bootstrap-sass/assets/javascript/bootstrap.js',
     './app/Resources/assets/js/wow.js',
     './app/Resources/assets/js/*.js'

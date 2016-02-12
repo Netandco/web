@@ -25,6 +25,7 @@ $font-family-base: 'AzoSans-Regular', sans-serif;
 //@import "normalize";
 @import "animate";
 
+html, body { height: 100%; width: 100%; margin: 0; }
 body { 
   padding-top: 50px; }
 
@@ -45,6 +46,8 @@ body {
 
 // From screen of moviles or tablets
 #intro {
+  min-height: 100%;
+  height: 100%;
   background: url(../img/backgrounds/creemosJuntos_1199x606.png) center right no-repeat;
   background-size: cover;
   color: #fff;
@@ -136,7 +139,6 @@ body {
 }
 
 #slider {
-  .carousel-indicators .active {background-color: $brand-primary;}
   .carousel-inner > .item > img {max-width: none;}
   .carousel-caption{
     right: 10%;
@@ -150,6 +152,24 @@ body {
     h4 {font-size: 1.375rem;}
     p {font-size: 1rem;}
   }
+  .carousel-indicators{
+      color: #FFF;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      left: 0;
+      bottom: 20px;
+      li {
+        display: inline;
+        border: none;
+        margin: 0px 10px; 
+      }
+      .active {
+        background: none;
+        color: $brand-primary;
+        width: auto;
+      }
+    }
 }
 
 #footer {
@@ -332,7 +352,6 @@ body {
 
   #slider {
     img { width: 100%;}
-    .carousel-indicators .active {background-color: $brand-primary;}
     .carousel-caption{
       right: 25%;
       left: 25%;
@@ -344,6 +363,24 @@ body {
         color: $brand-primary;}
       h4 {font-size: 1.375rem;}
       p {font-size: 1rem;}
+    }
+    .carousel-indicators{
+      color: #FFF;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      left: 0;
+      bottom: 40px;
+      li {
+        display: inline;
+        border: none;
+        margin: 0px 10px; 
+      }
+      .active {
+        background: none;
+        color: $brand-primary;
+        width: auto;
+      }
     }
   }
 
@@ -458,6 +495,14 @@ body {
     }
   }
 
+}
+
+// From screens large
+@media (min-width: $screen-lg-min) { 
+  #intro {
+    background: url(../img/backgrounds/creemosJuntos_1606x606.png) center center no-repeat;
+    background-size: cover;
+  }
 }
 
 /* animation from slider
