@@ -54,7 +54,7 @@ body {
   text-align: center;
   .main-text {
     font-size: 2.000rem;
-    margin: 100px 0px ;
+    margin-top: 60%;
     line-height: normal;
   }
 }
@@ -98,7 +98,6 @@ body {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 2em;
-  height: 100%;
   h3 {
     font-size: 2.0rem;
     color: $brand-primary;
@@ -250,7 +249,7 @@ body {
     text-align:center;
     .main-text {
       font-size: 5.000rem;
-      margin: 202px 0px ;
+      margin-top: 60%;
     }
   }
 
@@ -311,7 +310,6 @@ body {
     text-align: left;
     padding-top: 100px;
     padding-bottom: 2em;
-    height: 100%;
     h3 {
       font-size: 5.0rem;
       color: $brand-primary;
@@ -332,6 +330,7 @@ body {
     padding: 3rem 0;
     .text {
       margin-left: 5%;
+      padding-left: 15px;
       border-left: 0.35rem solid $brand-primary;
       font-size: 1rem;
       h3 {
