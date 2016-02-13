@@ -29,7 +29,7 @@ class DefaultController extends Controller
         $phone  = $request->request->get('phone');
         $message = $request->request->get('message');
 
-        $message = \Swift_Message::newInstance()
+        $message = Swift_Message::newInstance()
             ->setSubject('Contact Email')
             ->setFrom($email)
             ->setTo(array('jherel.cordova@netandco.es', 'jh9@hotmail.es', 'jgarloz18@gmail.com'))
@@ -38,9 +38,7 @@ class DefaultController extends Controller
                     'emails/contact.html.twig',
                     array('name' => $name, 'email' => $email, 'phone' => $phone, 'message' => $message)
                 ),
-                'text/html'
-            )
-        ;
+                'text/html');
         $this->get('mailer')->send($message);
 
         $this->addFlash(
