@@ -59,6 +59,10 @@
                 "database_name": "DATABASE_NAME",
                 "database_user": "DATABASE_USER",
                 "database_password": "DATABASE_PASSWORD",
+                "mailer_transport": "MAILER_TRANSPORT",
+                "mailer_host": "MAILER_HOST",
+                "mailer_user": "MAILER_USER",
+                "mailer_password": "MAILER_PASSWORD",
                 "monolog_action_level": "LOG_LEVEL"
             }
         }
