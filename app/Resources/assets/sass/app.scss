@@ -154,11 +154,12 @@ body {
   }
   .carousel-indicators{
       color: #FFF;
+      background-color: rgba(0, 0, 0, 0.45);
       margin: 0;
-      padding: 0;
+      padding: 20px;
       width: 100%;
       left: 0;
-      bottom: 20px;
+      bottom: 0px;
       li {
         display: inline;
         border: none;
@@ -367,15 +368,16 @@ body {
     }
     .carousel-indicators{
       color: #FFF;
+      background-color: rgba(0, 0, 0, 0.45);
       margin: 0;
-      padding: 0;
+      padding: 30px;
       width: 100%;
       left: 0;
-      bottom: 40px;
+      bottom: 0px;
       li {
         display: inline;
         border: none;
-        margin: 0px 10px; 
+        margin: 0px 15px; 
       }
       .active {
         background: none;
