@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
@@ -31,17 +32,19 @@ class DefaultController extends Controller
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Email')
             ->setFrom($email)
-            ->setTo('admin@netandco.es')
+            ->setTo(array('jherel.cordova@netandco.es', 'jh9@hotmail.es', 'jgarloz18@gmail.com'))
             ->setBody(
                 $this->renderView(
-                    // app/Resources/views/emails/contact.html.twig
                     'emails/contact.html.twig',
                     array('name' => $name, 'email' => $email, 'phone' => $phone, 'message' => $message)
                 ),
-                'text/html'
-            )
-        ;
+                'text/html');
         $this->get('mailer')->send($message);
+
+        $this->addFlash(
+            'notice',
+            'Hemos recibido tu mensaje correctamente!'
+        );
 
         return $this->redirectToRoute('homepage');
     }
