@@ -32,7 +32,7 @@ class DefaultController extends Controller
         $message = \Swift_Message::newInstance()
         $this->addFlash(
             'notice',
-            $this->getEnv('MAILER_TRANSPORT')
+            getenv('MAILER_TRANSPORT')
         );
             ->setSubject('Contact Email')
             ->setFrom($email)
