@@ -30,6 +30,10 @@ class DefaultController extends Controller
         $message = $request->request->get('message');
 
         $message = \Swift_Message::newInstance()
+        $this->addFlash(
+            'notice',
+            $this->getEnv('MAILER_TRANSPORT')
+        );
             ->setSubject('Contact Email')
             ->setFrom($email)
             ->setTo(array('jherel.cordova@netandco.es', 'jh9@hotmail.es', 'jgarloz18@gmail.com'))
