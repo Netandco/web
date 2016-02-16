@@ -14,7 +14,11 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        
+        $mt = $this->getParameter('mailer_host');
+        $this->addFlash(
+            'notice',
+            $mt
+        );
         return $this->render('default/index.html.twig');
     }
 
@@ -28,15 +32,10 @@ class DefaultController extends Controller
         $email  = $request->request->get('email');
         $phone  = $request->request->get('phone');
         $message = $request->request->get('message');
-        $this->addFlash(
-            'notice',
-            getenv('MAILER_TRANSPORT')
-        );
-
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Email')
             ->setFrom($email)
-            ->setTo(array('jherel.cordova@netandco.es', 'jh9@hotmail.es', 'jgarloz18@gmail.com'))
+            ->setTo('jgarloz18@gmail.com')//(array('jherel.cordova@netandco.es', 'jh9@hotmail.es', 'jgarloz18@gmail.com'))
             ->setBody(
                 $this->renderView(
                     'emails/contact.html.twig',
@@ -49,7 +48,6 @@ class DefaultController extends Controller
             'notice',
             'Hemos recibido tu mensaje correctamente!'
         );
-
         return $this->redirectToRoute('homepage');
     }
 }
