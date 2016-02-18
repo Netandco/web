@@ -26,7 +26,7 @@ class DefaultController extends Controller
         $name   = $request->request->get('name');
         $email  = $request->request->get('email');
         $phone  = $request->request->get('phone');
-        $message = $request->request->get('message');
+        $note   = $request->request->get('message');
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Email')
             ->setFrom($email)
@@ -34,7 +34,7 @@ class DefaultController extends Controller
             ->setBody(
                 $this->renderView(
                     'emails/contact.html.twig',
-                    array('name' => $name, 'email' => $email, 'phone' => $phone, 'message' => $message)
+                    array('name' => $name, 'email' => $email, 'phone' => $phone, 'message' => $note)
                 ),
                 'text/html');
         $this->get('mailer')->send($message);
