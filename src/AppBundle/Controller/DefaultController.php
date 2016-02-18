@@ -14,11 +14,6 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        $mt = $this->getParameter('mailer_host');
-        $this->addFlash(
-            'notice',
-            $mt
-        );
         return $this->render('default/index.html.twig');
     }
 
