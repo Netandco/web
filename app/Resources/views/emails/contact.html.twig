@@ -4,13 +4,20 @@
 	<title>Contacto vía Web</title>
 </head>
 <body>
-	<p>Se ha recibido un mensaje a través del formulario web de:</p>
-	<p>	
-		<span>{{ name }}</span><br>
+	<h1>Nuevo contacto de Net&Co</h1>
+	<hr>
+	<br>
+	<p>Hemos recibido un nuevo contacto a través de la web.</p>
+	<p>
+		<h3>No ha contactad</h3>
+		<span>Nombre: {{ name }}</span><br>
 		<span>Email: {{ email }}</span><br>
 		<span>Teléfono: {{ phone }}</span><br>
 	</p>
-	<span>Con el siguiente mensaje:</span>
-	<p>{{ message }}</p>
+	<p>
+		<h3>Su mensaje es:</h3>
+		{{ message }}
+	</p>
+	<br>
 </body>
 </html>
