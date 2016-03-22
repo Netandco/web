@@ -122,7 +122,7 @@ gulp.task('images', function() {
 // Start a server with LiveReload to preview the site in
 gulp.task('server', ['build'], function() {
   browser.init({
-    proxy: "http://localhost:8000/app_dev.php"
+    proxy: "http://localhost/netandco/web/app_dev.php"
   });
 });
 
