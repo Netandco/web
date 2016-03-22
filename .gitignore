@@ -9,6 +9,7 @@
 /composer.phar
 /vendor/
 /web/bundles/
+/app/config/parameters.yml
 
 .sass-cache
 node_modules
