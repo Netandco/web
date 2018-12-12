@@ -28,9 +28,9 @@ class DefaultController extends Controller
         $phone  = $request->request->get('phone');
         $note   = $request->request->get('message');
         $message = \Swift_Message::newInstance()
-            ->setSubject('Contact Email')
+            ->setSubject('Contact Net&Co Email')
             ->setFrom($email)
-            ->setTo('admin@netandco.es')
+            ->setTo('davidmiguel.sanchez@gmail.com')
             ->setBody(
                 $this->renderView(
                     'emails/contact.html.twig',
