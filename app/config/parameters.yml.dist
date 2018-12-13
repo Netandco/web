@@ -9,13 +9,27 @@ parameters:
     database_password: ~
     # You should uncomment this if you want use pdo_sqlite
     # database_path: "%kernel.root_dir%/data.db3"
+    mailer:
+    class: sfMailer
+    param:
+    logging: %SF_LOGGING_ENABLED%
+    charset: %SF_CHARSET%
+    delivery_strategy: realtime
+    transport:
+    class: Swift_SmtpTransport
+    param:
+    host: smtp.sendgrid.net
+    port: 587
+    encryption: ~
+    username: app45557032@heroku.com
+    password: dy7h7ikj5466
 
-    mailer_transport:  smtp
-    mailer_encryption: ~
-    mailer_auth_mode:  ~
-    mailer_host:       127.0.0.1
-    mailer_user:       ~
-    mailer_password:   ~
+    #mailer_transport:  smtp
+    #mailer_encryption: ~
+    #mailer_auth_mode:  ~
+    #mailer_host:       127.0.0.1
+    #mailer_user:       ~
+    #mailer_password:   ~
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
