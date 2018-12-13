@@ -31,7 +31,7 @@ class DefaultController extends Controller
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Net&Co Email')
             ->setFrom($email)
-            ->setTo('netandconac@gmail.com')
+            ->setTo('davidmiguel.sanchez@gmail.com')
             ->setBody(
                 $this->renderView(
                     'emails/contact.html.twig',
